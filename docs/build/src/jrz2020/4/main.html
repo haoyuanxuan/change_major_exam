@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4. Set &mdash; 计软智网转专业试题回忆版、模拟题及参考解答 v1.0.0 文档</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script>let toggleHintShow = '';</script>
+        <script>let toggleHintHide = '';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script src="../../../_static/translations.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="5. Implement Queue&lt;T&gt; using ForwardList&lt;T&gt; interface" href="../5/main.html" />
+    <link rel="prev" title="3. Replace string" href="../3/main.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            计软智网转专业试题回忆版、模拟题及参考解答
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../solution_preface.html">解答参考的说明</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">计软智 2020 年试题</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../1/main.html">1. Translate the input floating point to amount in words</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2/main.html">2. Number tower</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3/main.html">3. Replace string</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4. <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Set</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5/main.html">5. Implement <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Queue</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span></code> using <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">ForwardList</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span></code> interface</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../jrz2021/index.html">计软智 2021 年试题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jrz2022/index.html">计软智 2022 年试题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jrz2023/index.html">计软智 2023 年试题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wa2022.html">网安 2022 年回忆内容</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wa2022_simulation/index.html">网安 2022 年模拟题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wa2023/index.html">网安 2023 年试题</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">计软智网转专业试题回忆版、模拟题及参考解答</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">计软智 2020 年试题</a></li>
+      <li class="breadcrumb-item active">4. <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Set</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/src/jrz2020/4/main.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="set">
+<h1>4. <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Set</span></code><a class="headerlink" href="#set" title="此标题的永久链接"></a></h1>
+<p>Please complete the program while keeping interfaces and implementations seperated.</p>
+<p>The program implements a class called <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Set</span></code>, which can store any number of <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span></code> objects, and satisfies the following invariants,</p>
+<ul class="simple">
+<li><p><code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">*</span><span class="w"> </span><span class="n">data_</span></code></p>
+<ul>
+<li><p>The member that holds all <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span></code> objects; if no object exists, <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">data_</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span></code>.</p></li>
+</ul>
+</li>
+<li><p><code class="code highlight cpp docutils literal highlight-cpp"><span class="kt">int</span><span class="w"> </span><span class="n">size_</span></code></p>
+<ul>
+<li><p>The member that indicates the amount of <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span></code> objects; if no object exists <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">size_</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Element uniqueness</p>
+<ul>
+<li><p>For any two different objects <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">string1</span></code> and <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">string2</span></code> holded by <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">data_</span></code>, <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">string1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">string2</span></code> (equality) should not be true.</p></li>
+<li><p>Also, when inserting a new object, the insertion should not happen if there’s already an equal object.</p></li>
+</ul>
+</li>
+</ul>
+<p>You should implement the following functions for it,</p>
+<ul class="simple">
+<li><p>Constructor <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Set</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">*</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="p">)</span></code></p>
+<ul>
+<li><p>Insert all elements inside <code class="code highlight cpp docutils literal highlight-cpp"><span class="p">[</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">size</span><span class="p">)</span></code> into <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">data_</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Copy constructor</p></li>
+<li><p>Copy assignment</p></li>
+<li><p><code class="code highlight cpp docutils literal highlight-cpp"><span class="k">auto</span><span class="w"> </span><span class="k">operator</span><span class="o">+=</span><span class="p">(</span><span class="n">Set</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Set</span><span class="o">&amp;</span></code></p>
+<ul>
+<li><p>Insert all elements inside <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">other</span></code> into <code class="code highlight cpp docutils literal highlight-cpp"><span class="o">*</span><span class="k">this</span></code>.</p></li>
+</ul>
+</li>
+<li><p><code class="code highlight cpp docutils literal highlight-cpp"><span class="k">friend</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Set</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lhs</span><span class="p">,</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">rhs</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Set</span></code></p>
+<ul>
+<li><p>Merge two <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Set</span></code> as a <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Set</span></code>.</p></li>
+</ul>
+</li>
+<li><p><code class="code highlight cpp docutils literal highlight-cpp"><span class="k">friend</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="k">operator</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ostream</span><span class="p">,</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">set</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="o">&amp;</span></code></p>
+<ul>
+<li><p>Output the stored <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span></code> objects with the format <code class="code docutils literal notranslate"><span class="pre">[element_1,</span> <span class="pre">element_2,</span> <span class="pre">...,</span> <span class="pre">element_n]</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<p>The following has given part of the <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Set</span></code>’s implementation and the <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">main</span><span class="p">()</span></code> function.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">翻译</p>
+<p>请保持接口与实现相分离地完成程序.</p>
+<p>该程序实现了一个类 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Set</span></code>, 它可以存储任意数量的 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span></code> 对象, 且满足以下不变式,</p>
+<ul class="simple">
+<li><p><code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">*</span><span class="w"> </span><span class="n">data_</span></code></p>
+<ul>
+<li><p>保存存储的 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span></code> 对象; 当不存储有 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span></code> 对象时, <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">data_</span></code> 为空指针.</p></li>
+</ul>
+</li>
+<li><p><code class="code highlight cpp docutils literal highlight-cpp"><span class="kt">int</span><span class="w"> </span><span class="n">size_</span></code></p>
+<ul>
+<li><p>表示存储的 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span></code> 数量; 当不存储有 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span></code> 对象时, <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">size_</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span></code>.</p></li>
+</ul>
+</li>
+<li><p>元素唯一性</p>
+<ul>
+<li><p>对于 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">data_</span></code> 中存储的 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span></code> 对象, 不存在两个对象 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">string1</span></code> 和 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">string2</span></code>, 使得 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">string1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">string2</span></code> （称为相等）成立.</p></li>
+<li><p>同时, 当插入新对象时, 若 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">data_</span></code> 中已存在相等的对象时, 则不进行插入.</p></li>
+</ul>
+</li>
+</ul>
+<p>为其实现,</p>
+<ul class="simple">
+<li><p>构造函数 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Set</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">*</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="p">)</span></code></p>
+<ul>
+<li><p>将 <code class="code highlight cpp docutils literal highlight-cpp"><span class="p">[</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">size</span><span class="p">)</span></code> 中的元素加入 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">data_</span></code> 中.</p></li>
+</ul>
+</li>
+<li><p>拷贝构造函数</p></li>
+<li><p>拷贝赋值函数</p></li>
+<li><p><code class="code highlight cpp docutils literal highlight-cpp"><span class="k">auto</span><span class="w"> </span><span class="k">operator</span><span class="o">+=</span><span class="p">(</span><span class="n">Set</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Set</span><span class="o">&amp;</span></code></p>
+<ul>
+<li><p>将 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">other</span></code> 中的元素加入 <code class="code highlight cpp docutils literal highlight-cpp"><span class="o">*</span><span class="k">this</span></code> 中.</p></li>
+</ul>
+</li>
+<li><p><code class="code highlight cpp docutils literal highlight-cpp"><span class="k">friend</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Set</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lhs</span><span class="p">,</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">rhs</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Set</span></code></p>
+<ul>
+<li><p>合并两个 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Set</span></code> 为一个新的 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Set</span></code>.</p></li>
+</ul>
+</li>
+<li><p><code class="code highlight cpp docutils literal highlight-cpp"><span class="k">friend</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="k">operator</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ostream</span><span class="p">,</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">set</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="o">&amp;</span></code></p>
+<ul>
+<li><p>按 <code class="code highlight cpp docutils literal highlight-cpp"><span class="p">[</span><span class="n">元素1</span><span class="p">,</span><span class="w"> </span><span class="n">元素2</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">元素n</span><span class="p">]</span></code> 的格式输出存储的 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">std</span><span class="o">::</span><span class="n">string</span></code> 对象.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">set.hpp</span><a class="headerlink" href="#id1" title="此代码块的永久链接"></a></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#ifndef SET_HPP</span>
+<span class="linenos"> 2</span><span class="cp">#define SET_HPP</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iosfwd&gt;</span>
+<span class="linenos"> 5</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+<span class="linenos"> 6</span><span class="cm">/* you can include any standard headers here */</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="k">class</span><span class="w"> </span><span class="nc">Set</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 9</span><span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="linenos">10</span><span class="w">  </span><span class="cm">/* please complete the code */</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="w"> </span><span class="k">private</span><span class="o">:</span>
+<span class="linenos">13</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">*</span><span class="w"> </span><span class="n">data_</span><span class="p">;</span>
+<span class="linenos">14</span><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">size_</span><span class="p">;</span>
+<span class="linenos">15</span><span class="p">};</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">main.cpp</span><a class="headerlink" href="#id2" title="此代码块的永久链接"></a></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;set.hpp&quot;</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 4</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="k">auto</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 7</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">s1</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;John&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Bat-man&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Doctor&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;John&quot;</span><span class="p">};</span>
+<span class="linenos"> 8</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">s2</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;Doctor&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Smith&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Komeji&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Smith&quot;</span><span class="p">};</span>
+<span class="linenos"> 9</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">s3</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;Komeji&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Satori&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Momo&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Satori&quot;</span><span class="p">};</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="w">  </span><span class="n">Set</span><span class="w"> </span><span class="nf">set1</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span>
+<span class="linenos">12</span><span class="w">  </span><span class="n">Set</span><span class="w"> </span><span class="nf">set2</span><span class="p">(</span><span class="n">s2</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span>
+<span class="linenos">13</span><span class="w">  </span><span class="n">Set</span><span class="w"> </span><span class="n">set3</span><span class="p">;</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">set1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+<span class="linenos">16</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">set2</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+<span class="linenos">17</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">set3</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="w">  </span><span class="n">set3</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">set2</span><span class="p">;</span>
+<span class="linenos">20</span><span class="w">  </span><span class="n">set1</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">set2</span><span class="p">;</span>
+<span class="linenos">21</span><span class="w">  </span><span class="n">set1</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">set1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">set3</span><span class="p">;</span>
+<span class="linenos">22</span>
+<span class="linenos">23</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">set1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+<span class="linenos">24</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">set2</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+<span class="linenos">25</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">set3</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+<span class="linenos">26</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../3/main.html" class="btn btn-neutral float-left" title="3. Replace string" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../5/main.html" class="btn btn-neutral float-right" title="5. Implement Queue&lt;T&gt; using ForwardList&lt;T&gt; interface" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, FeignClaims.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

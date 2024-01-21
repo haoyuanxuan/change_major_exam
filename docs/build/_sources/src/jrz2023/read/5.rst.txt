@@ -1,0 +1,22 @@
+****
+5.
+****
+
+.. literalinclude:: 5.cpp
+  :language: cpp
+  :linenos:
+
+.. admonition:: 点击查看答案
+  :class: dropdown
+
+  :godbolt:`K8EYs55G3`
+
+  .. code-block:: text
+    :linenos:
+
+    Aid:A102
+    Aid:A101
+    Bid:B202
+    Aid:C302
+    Aid:A101
+    Bid:B201

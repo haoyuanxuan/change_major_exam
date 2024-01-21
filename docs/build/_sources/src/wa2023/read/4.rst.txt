@@ -1,0 +1,21 @@
+********************************
+4. 静态变量和全局变量
+********************************
+
+.. literalinclude:: 4.cpp
+  :language: cpp
+  :linenos:
+
+.. admonition:: 点击查看答案
+  :class: dropdown
+
+  :godbolt:`YMTq6Wf94`
+
+  .. code-block:: bash
+    :linenos:
+
+    13
+    25
+    38
+    52
+    52

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5. Inheritance and class hierarchy &mdash; 计软智网转专业试题回忆版、模拟题及参考解答 v1.0.0 文档</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script>let toggleHintShow = '';</script>
+        <script>let toggleHintHide = '';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script src="../../../_static/translations.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="计软智 2022 年试题" href="../../jrz2022/index.html" />
+    <link rel="prev" title="4. Complete the program" href="../4/main.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            计软智网转专业试题回忆版、模拟题及参考解答
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../solution_preface.html">解答参考的说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jrz2020/index.html">计软智 2020 年试题</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">计软智 2021 年试题</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../1/main.html">1. <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">two_smallest</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2/main.html">2. <code class="code highlight cpp docutils literal highlight-cpp"><span class="o">&lt;</span><span class="n">cstring</span><span class="o">&gt;</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3/main.html">3. <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Polynomial</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4/main.html">4. Complete the program</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5. Inheritance and class hierarchy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../jrz2022/index.html">计软智 2022 年试题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jrz2023/index.html">计软智 2023 年试题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wa2022.html">网安 2022 年回忆内容</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wa2022_simulation/index.html">网安 2022 年模拟题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wa2023/index.html">网安 2023 年试题</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">计软智网转专业试题回忆版、模拟题及参考解答</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">计软智 2021 年试题</a></li>
+      <li class="breadcrumb-item active">5. Inheritance and class hierarchy</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/src/jrz2021/5/main.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="inheritance-and-class-hierarchy">
+<h1>5. Inheritance and class hierarchy<a class="headerlink" href="#inheritance-and-class-hierarchy" title="此标题的永久链接"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>忘了原题, 这个难度和考点类似而要写的代码更多.</p>
+<p>建议直接做 <a class="reference internal" href="../../jrz2022/index.html"><span class="doc">计软智 2022 年试题</span></a> 最后 1 题, 考点和做法是一样的.</p>
+</div>
+<p>Implement the <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Shape</span></code> hierarchy designed in the picture below.</p>
+<ul class="simple">
+<li><p>Each <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">TwoDimensionalShape</span></code> should contain a member function <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">get_area</span></code> to calculate the area of the 2D shape.</p></li>
+<li><p>Each <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">ThreeDimensionalShape</span></code> should have member functions <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">get_area</span></code> and <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">get_volume</span></code> to calculate the surface area and volume of the 3D shape, respectively.</p></li>
+</ul>
+<p>Create a program that uses a <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">vector</span></code> of <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Shape</span></code> pointers to objects of each concrete class in the hierarchy.
+The program should print the object to which each <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">vector</span></code> element points.</p>
+<ul class="simple">
+<li><p>If a shape is a <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">TwoDimensionalShape</span></code>, display its area.</p></li>
+<li><p>If a shape is a <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">ThreeDimensionalShape</span></code>, display its area and volume.</p></li>
+</ul>
+<div class="dropdown admonition">
+<p class="admonition-title">翻译</p>
+<p>实现下面图片所示的 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Shape</span></code> 类层次.</p>
+<ul class="simple">
+<li><p>每个 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">TwoDimensionalShape</span></code> 应该有成员函数 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">get_area</span></code> 来计算 2D 图形的面积.</p></li>
+<li><p>每个 :cpp: <cite>ThreeDimensionalShape</cite> 应该有成员函数 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">get_area</span></code> 和 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">get_volume</span></code> 来计算 3D 图形的表面积和体积.</p></li>
+</ul>
+<p>编写一个程序, 它使用一个 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">vector</span></code> 来存储 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Shape</span></code> 指针, 每个指针都指向类层次中的一个具体类的对象. 该程序应该打印 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">vector</span></code> 中每个元素.</p>
+<ul class="simple">
+<li><p>如果继承自 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">TwoDimensionalShape</span></code>, 输出其面积.</p></li>
+<li><p>如果继承自 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">ThreeDimensionalShape</span></code>, 输出其表面积和体积.</p></li>
+</ul>
+</div>
+digraph UML_Class_diagram {
+  node [fontname = &quot;Helvetica,Arial,sans-serif&quot;; shape = record; style = filled; fillcolor = gray95;];
+  edge [fontname = &quot;Helvetica,Arial,sans-serif&quot;;];
+  
+  Shape [shape = plain;label = &lt;&lt;table border=&quot;0&quot; cellborder=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot;&gt;
+    &lt;tr&gt; &lt;td&gt; &lt;b&gt;Shape&lt;/b&gt; &lt;/td&gt; &lt;/tr&gt;
+    &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt;
+    &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt;
+    &lt;/table&gt;&gt;;];
+  
+  TwoDiagramShape [shape = plain;label = &lt;&lt;table border=&quot;0&quot; cellborder=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot;&gt;
+    &lt;tr&gt; &lt;td&gt; &lt;b&gt;TwoDiagramShape&lt;/b&gt; &lt;/td&gt; &lt;/tr&gt;
+    &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt;
+    &lt;tr&gt; &lt;td&gt;
+    &lt;table border=&quot;0&quot; cellborder=&quot;0&quot; cellspacing=&quot;0&quot; &gt;
+    &lt;tr&gt; &lt;td align=&quot;left&quot; &gt;+ get_area() const: double&lt;/td&gt; &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;/td&gt; &lt;/tr&gt;
+    &lt;/table&gt;&gt;;];
+  Circle;
+  Square;
+  Triangle;
+  
+  ThreeDiagramShape [shape = plain;label = &lt;&lt;table border=&quot;0&quot; cellborder=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot;&gt;
+    &lt;tr&gt; &lt;td&gt; &lt;b&gt;ThreeDiagramShape&lt;/b&gt; &lt;/td&gt; &lt;/tr&gt;
+    &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt;
+    &lt;tr&gt; &lt;td&gt;
+    &lt;table border=&quot;0&quot; cellborder=&quot;0&quot; cellspacing=&quot;0&quot; &gt;
+    &lt;tr&gt; &lt;td align=&quot;left&quot; &gt;+ get_area() const: double&lt;/td&gt; &lt;/tr&gt;
+    &lt;tr&gt; &lt;td align=&quot;left&quot; &gt;+ get_volume() const: double&lt;/td&gt; &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;/td&gt; &lt;/tr&gt;
+    &lt;/table&gt;&gt;;];
+  Sphere;
+  Cube;
+  Tetrahedron;
+  
+  edge [dir = back; arrowtail = empty; style = &quot;&quot;;];
+  Shape -&gt; TwoDiagramShape;
+  Shape -&gt; ThreeDiagramShape;
+  
+  TwoDiagramShape -&gt; Circle;
+  TwoDiagramShape -&gt; Square;
+  TwoDiagramShape -&gt; Triangle;
+  
+  ThreeDiagramShape -&gt; Sphere;
+  ThreeDiagramShape -&gt; Cube;
+  ThreeDiagramShape -&gt; Tetrahedron;
+}<div class="dropdown admonition">
+<p class="admonition-title">点击查看解答参考</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>此卷的所有解答参考都是笔者考试时实际写的代码的回忆版, 所以 <strong>相比于其他卷的解答参考可能更为超纲难懂</strong>.</p>
+<p>主要是在展示以 “C++98 + Lambdas + range-based for + auto + STL” 为学习内容能如何秒杀转专业题目.</p>
+</div>
+<p><a class="reference external" href="https://godbolt.org/z/ebM7eYTnx">[在线代码 ebM7eYTnx]</a></p>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../4/main.html" class="btn btn-neutral float-left" title="4. Complete the program" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../../jrz2022/index.html" class="btn btn-neutral float-right" title="计软智 2022 年试题" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, FeignClaims.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+*********************************************
+2. 构造和析构次数, 全局对象的构造时机
+*********************************************
+
+.. literalinclude:: 2.cpp
+  :language: cpp
+  :linenos:
+
+.. admonition:: 点击查看答案
+  :class: dropdown
+
+  :godbolt:`MdKE4Tnjv`
+
+  .. code-block:: bash
+    :linenos:
+
+    3
+    9
+    4
+    2

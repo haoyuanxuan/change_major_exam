@@ -1,0 +1,29 @@
+*****************
+2. (20 scores)
+*****************
+
+A vector :math:`\overrightarrow{v}` on a two-dimensional plane can be expressed as :math:`(a, b)`. The basic operation of a vector is defined as follows:
+
+1. Vector modulus: :math:`||\overrightarrow{v}|| = \sqrt{a^2 + b^2}`.
+2. Vector inner product: :math:`\overrightarrow{v_1} * \overrightarrow{v_2} = a_1 * a_2 + b_1 * b_2`, where :math:`\overrightarrow{v_1} = (a_1, b_1)`, :math:`\overrightarrow{v_2} = (a_2, b_2)`.
+3. Cosine distance of vector: :math:`cos\theta = \frac{\overrightarrow{v_1} * \overrightarrow{v_2}}{||\overrightarrow{v_1}|| * ||\overrightarrow{v_2}||}`, where :math:`\overrightarrow{v_1} = (a_1, b_1)`, :math:`\overrightarrow{v_2} = (a_2, b_2)`. If cosine distance is 0, the two vectors are perpendicular; if cosine distance is 1, the two vectors are similar.
+
+Write the program to encapsulate the vector class :cpp:`CVector`, and verify the correctness of the :cpp:`CVector`.
+
+.. admonition:: 翻译
+  :class: dropdown
+
+  一个二维向量 :math:`\overrightarrow{v}` 可以被表示为 :math:`(a, b)`. 其基本运算定义如下:
+
+  1. 求模: :math:`||\overrightarrow{v}|| = \sqrt{a^2 + b^2}`.
+  2. 求内积: :math:`\overrightarrow{v_1} * \overrightarrow{v_2} = a_1 * a_2 + b_1 * b_2`, 其中 :math:`\overrightarrow{v_1} = (a_1, b_1)`, :math:`\overrightarrow{v_2} = (a_2, b_2)`.
+  3. 余弦距离: :math:`cos\theta = \frac{\overrightarrow{v_1} * \overrightarrow{v_2}}{||\overrightarrow{v_1}|| * ||\overrightarrow{v_2}||}`, 其中 :math:`\overrightarrow{v_1} = (a_1, b_1)`, :math:`\overrightarrow{v_2} = (a_2, b_2)`. 如果余弦距离为 0, 则两向量相垂直; 如果余弦距离为 1, 则两向量相似.
+
+  编写程序封装该向量类为 :cpp:`CVector`, 并验证 :cpp:`CVector` 的正确性.
+
+.. admonition:: 点击查看解答参考
+  :class: dropdown
+
+  :godbolt:`87qo14WvK`
+
+  要求验证正确性, 即需要写 :cpp:`main` 函数调用接口并验证结果.
