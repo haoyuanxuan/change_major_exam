@@ -28,4 +28,6 @@ The program should print the object to which each :cpp:`vector` element points.
   - 如果继承自 :cpp:`TwoDimensionalShape`, 输出其面积.
   - 如果继承自 :cpp:`ThreeDimensionalShape`, 输出其表面积和体积.
 
-.. graphviz:: class_hierarchy.dot
+.. figure:: class_hierarchy.svg
+
+  Class Hierarchy
