@@ -1,0 +1,20 @@
+输入一个数 :cpp:`m`, 完成两个函数 :cpp:`fill()` 和 :cpp:`print()`, 使得程序运行结果如下所示.
+
+.. literalinclude:: main.cpp
+  :language: cpp
+  :linenos:
+  :caption: main.cpp
+
+.. code-block:: text
+  :linenos:
+
+  输入: 4
+  输出:
+  1   2   3   4
+  12  13  14  5
+  11  16  15  6
+  10  9   8   7
+  a   b   c   d
+  l   m   n   e
+  k   p   o   f
+  j   i   h   g

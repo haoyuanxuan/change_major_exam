@@ -1,0 +1,62 @@
+*****************
+4. (20 scores)
+*****************
+
+Programming for under graduate students graduation audits: read basic information, according to the requirements of graduation audit, output the information into ``studentGradutate.data`` file.
+
+1. Among them, under graduate students are required to complete at least 150 credits, and graduate students are required to complete at least 36 credits, and pass both teaching practice and scientific research assessement.
+
+2. The contents of the question include:
+
+  .. list-table::
+    :stub-columns: 1
+
+    * - :cpp:`UStudent`
+
+      - .. code-block:: cpp
+          :linenos:
+        
+          string strId;     // Student number
+          string strNames;  // Student name
+          double dCredits;  // Credits completed
+          bool bResult;     // Can graduate or not
+
+    * - :cpp:`GStudent`
+
+      - .. code-block:: cpp
+          :linenos:
+        
+          string strId;     // Student number
+          string strNames;  // Student name
+          double dCredits;  // Credits completed
+          bool bResult;     // Can graduate or not
+          bool bTeaching;   // Pass teaching practice or not
+          bool bResearch;   // Pass scientific research assessement or not
+
+3. Complete the following classes called :cpp:`Student`, :cpp:`UStudent`, :cpp:`GStudent`, and the :cpp:`main` function, so that the program can create a ``studentGraduate.data`` file as following correctly:
+
+.. literalinclude:: 4.cpp
+  :language: cpp
+  :linenos:
+
+.. code-block:: text
+  :linenos:
+  :caption: studentGraduate.data
+
+  1001 Donald 156 1
+  2003 Chris 36 1 1 1
+  2004 Cindy 38 1 1 1
+
+.. admonition:: 翻译
+  :class: dropdown
+
+  .. include:: 4_translation.irst
+
+.. admonition:: 点击查看解答参考
+  :class: dropdown
+
+  :godbolt:`x58TxMz53`
+
+  这道题注意一下, 21 年最后一道题也考了类似的题。
+
+  此题中确切给出了输出文件的输出内容, 故虽然输出文件以看似很二进制的 ``.data`` 为后缀, 但不是二进制输出.

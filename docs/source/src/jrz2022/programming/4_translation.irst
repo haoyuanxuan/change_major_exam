@@ -1,0 +1,44 @@
+编写实现学生的毕业审查: 读取基本信息, 根据毕业审查要求, 输出信息到 ``studentGradutate.data`` 文件中.
+
+1. 其中, 本科学生要求修满至少 150 学分; 研究生要求修满至少 36 学分, 并通过教学实践和科研实践考核.
+
+2. 该问题涉及以下内容:
+
+  .. list-table::
+    :stub-columns: 1
+
+    * - :cpp:`UStudent`
+
+      - .. code-block:: cpp
+          :linenos:
+        
+          string strId;     // 学号
+          string strNames;  // 学生名字
+          double dCredits;  // 完成的学分数
+          bool bResult;     // 能否毕业
+
+    * - :cpp:`GStudent`
+
+      - .. code-block:: cpp
+          :linenos:
+        
+          string strId;     // 学号
+          string strNames;  // 学生名字
+          double dCredits;  // 完成的学分数
+          bool bResult;     // 能否毕业
+          bool bTeaching;   // 是否通过教学实践
+          bool bResearch;   // 是否通过科研实践
+
+3. 完成以下类 :cpp:`Student`, :cpp:`UStudent`, :cpp:`GStudent` 和 :cpp:`main` 函数的编写, 以让程序创建一个 ``studentGraduate.data`` 文件含有以下内容:
+
+.. literalinclude:: 4_translation.cpp
+  :language: cpp
+  :linenos:
+
+.. code-block:: text
+  :linenos:
+  :caption: studentGraduate.data
+
+  1001 Donald 156 1
+  2003 Chris 36 1 1 1
+  2004 Cindy 38 1 1 1

@@ -1,0 +1,27 @@
+*****************
+3. (20 scores)
+*****************
+
+Complete 3 classes called :cpp:`Date`, :cpp:`Item` and :cpp:`Customer`. Make the following function named :cpp:`main` can output correctly.
+
+.. admonition:: 翻译
+  :class: dropdown
+
+  实现 :cpp:`Date`, :cpp:`Item` 和 :cpp:`Customer` 类, 使 :cpp:`main` 函数正确输出对应内容.
+
+.. literalinclude:: 3.cpp
+  :language: cpp
+  :linenos:
+  :caption: main.cpp
+
+.. literalinclude:: 3.txt
+  :language: text
+  :linenos:
+  :caption: output
+
+.. admonition:: 点击查看解答参考
+  :class: dropdown
+
+  :godbolt:`1j9EaM8T9`
+
+  21 年也考了 :cpp:`<cstring>` (或者说 :cpp:`<string.h>`) 内函数的使用.

@@ -1,0 +1,7 @@
+Customer ID:11000001
+Purchase Date:2022-6-18
+The Purchase items are listed as follows:
+1: itemName: cup,number: 2,price: 9.2,amount: 18.4
+2: itemName: jacker,number: 1,price: 50,amount: 50
+3: itemName: steak,number: 3,price: 10,amount: 30
+The total amount of the Purchase items is 98.4

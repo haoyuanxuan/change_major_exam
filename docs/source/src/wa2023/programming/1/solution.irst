@@ -1,0 +1,5 @@
+:godbolt:`srE68Yx88`
+
+.. literalinclude:: solution.cpp
+  :language: cpp
+  :linenos:

@@ -1,0 +1,6 @@
+Write function template :cpp:`two_smallest`, which finds the two minimum values of the three elements.
+
+.. admonition:: 翻译
+  :class: dropdown
+
+  编写一个函数模板 :cpp:`two_smallest`, 它返回三个元素中两个较小元素.

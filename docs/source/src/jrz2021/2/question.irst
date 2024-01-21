@@ -1,0 +1,21 @@
+题上中文限制: 不允许使用字符串标准库函数 (:cpp:`<string>`, :cpp:`<cstring>`, :cpp:`<string.h>`), 只能使用字符数组.
+
+Store two user input strings into c-style character arrays.
+Connect them, change the punctuation and convert the lowercase letters into uppercase letters for output.
+
+.. admonition:: 翻译
+  :class: dropdown
+
+  将两个用户输入的字符串存储到 C 风格字符数组中.
+  连接两个字符串, 改变标点符号并将小写字母转换为大写字母, 然后输出.
+
+For example,
+
+.. code-block:: text
+  :linenos:
+
+  input:
+    Hello C++!
+    Happy New Year, 2021!
+  output:
+    HELLO C++, HAPPY NEW YEAR, 2021!

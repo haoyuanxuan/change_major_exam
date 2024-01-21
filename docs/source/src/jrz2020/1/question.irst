@@ -1,0 +1,16 @@
+Write a program that takes a floating point as the input and translates it to amount in words.
+The resulting amount in words should be rounded to the cent.
+What's more, the program should apply to as large a number as possible.
+
+.. admonition:: 翻译
+  :class: dropdown
+
+  编写一个程序将输入的浮点数转换为中文大写数字, 其结果精度四舍五入至几角几分. 你的程序应该适用于尽可能大的数字.
+
+For example,
+
+.. code-block:: text
+  :linenos:
+
+  input: 123456.01
+  output: 壹拾贰万叁仟肆佰伍拾陆元壹分
