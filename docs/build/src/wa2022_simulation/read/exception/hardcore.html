@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>硬核题: 抛出一个构造函数和析构函数会输出的类 &mdash; 计软智网转专业试题回忆版、模拟题及参考解答 v1.0.0 文档</title>
-      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/togglebutton.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=eafc0fe6" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/doctools.js"></script>
-        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../_static/documentation_options.js?v=12f31cd9"></script>
+        <script src="../../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script>let toggleHintShow = '';</script>
         <script>let toggleHintHide = '';</script>
         <script>let toggleOpenOnPrint = 'true';</script>
-        <script src="../../../../_static/togglebutton.js"></script>
-        <script src="../../../../_static/translations.js"></script>
+        <script src="../../../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script src="../../../../_static/translations.js?v=beaddf03"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../../genindex.html" />
@@ -107,10 +110,10 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>硬核题: 抛出一个构造函数和析构函数会输出的类<a class="headerlink" href="#id1" title="此标题的永久链接"></a></h1>
+<h1>硬核题: 抛出一个构造函数和析构函数会输出的类<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <p>大概率不考, 但理论很简单, 建议了解一下.</p>
 <section id="id2">
-<h2>异常抛出的对象<a class="headerlink" href="#id2" title="此标题的永久链接"></a></h2>
+<h2>异常抛出的对象<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>异常抛出时是要抛出一个对象的, 那么这个对象应该存放在哪？</p>
 <p>显然不能存放在栈上, 因为 <a class="reference internal" href="normal.html"><span class="doc">正常题: 抛出时栈回溯（stack unwinding）</span></a> 中已经指出, 在栈回溯的过程中, 这些栈上的自动存储对象都需要被析构.
 所以当以 <code class="code highlight cpp docutils literal highlight-cpp"><span class="k">throw</span><span class="w"> </span><span class="n">object</span><span class="p">;</span></code> 抛出时, 会调用拷贝构造函数创建一个新的对象, 它不存放在栈中.</p>
@@ -138,7 +141,7 @@
 </div>
 </section>
 <section id="id3">
-<h2>异常捕获时<a class="headerlink" href="#id3" title="此标题的永久链接"></a></h2>
+<h2>异常捕获时<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>假设抛出了类型 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Printer</span></code>,</p>
 <ul class="simple">
 <li><p>如果 <code class="code highlight cpp docutils literal highlight-cpp"><span class="k">catch</span></code> 中写的是 <code class="code highlight cpp docutils literal highlight-cpp"><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">Printer</span><span class="w"> </span><span class="n">printer</span><span class="p">)</span></code>, 则还需要发生拷贝.</p></li>
@@ -171,7 +174,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 2024, FeignClaims.</p>
+    <p>&#169; 版权所有 2024, FeignClaims。</p>
   </div>
 
   利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
