@@ -1,2 +1,2 @@
 sphinx_togglebutton==0.3.2
-sphinx_rtd_theme==1.2.2
+sphinx_rtd_theme==2.0.0
