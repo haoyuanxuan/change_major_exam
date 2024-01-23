@@ -128,55 +128,12 @@ The program should print the object to which each <code class="code highlight cp
 <li><p>如果继承自 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">ThreeDimensionalShape</span></code>, 输出其表面积和体积.</p></li>
 </ul>
 </div>
-digraph UML_Class_diagram {
-  node [fontname = &quot;Helvetica,Arial,sans-serif&quot;; shape = record; style = filled; fillcolor = gray95;];
-  edge [fontname = &quot;Helvetica,Arial,sans-serif&quot;;];
-  
-  Shape [shape = plain;label = &lt;&lt;table border=&quot;0&quot; cellborder=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot;&gt;
-    &lt;tr&gt; &lt;td&gt; &lt;b&gt;Shape&lt;/b&gt; &lt;/td&gt; &lt;/tr&gt;
-    &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt;
-    &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt;
-    &lt;/table&gt;&gt;;];
-  
-  TwoDiagramShape [shape = plain;label = &lt;&lt;table border=&quot;0&quot; cellborder=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot;&gt;
-    &lt;tr&gt; &lt;td&gt; &lt;b&gt;TwoDiagramShape&lt;/b&gt; &lt;/td&gt; &lt;/tr&gt;
-    &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt;
-    &lt;tr&gt; &lt;td&gt;
-    &lt;table border=&quot;0&quot; cellborder=&quot;0&quot; cellspacing=&quot;0&quot; &gt;
-    &lt;tr&gt; &lt;td align=&quot;left&quot; &gt;+ get_area() const: double&lt;/td&gt; &lt;/tr&gt;
-    &lt;/table&gt;
-    &lt;/td&gt; &lt;/tr&gt;
-    &lt;/table&gt;&gt;;];
-  Circle;
-  Square;
-  Triangle;
-  
-  ThreeDiagramShape [shape = plain;label = &lt;&lt;table border=&quot;0&quot; cellborder=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;4&quot;&gt;
-    &lt;tr&gt; &lt;td&gt; &lt;b&gt;ThreeDiagramShape&lt;/b&gt; &lt;/td&gt; &lt;/tr&gt;
-    &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt;
-    &lt;tr&gt; &lt;td&gt;
-    &lt;table border=&quot;0&quot; cellborder=&quot;0&quot; cellspacing=&quot;0&quot; &gt;
-    &lt;tr&gt; &lt;td align=&quot;left&quot; &gt;+ get_area() const: double&lt;/td&gt; &lt;/tr&gt;
-    &lt;tr&gt; &lt;td align=&quot;left&quot; &gt;+ get_volume() const: double&lt;/td&gt; &lt;/tr&gt;
-    &lt;/table&gt;
-    &lt;/td&gt; &lt;/tr&gt;
-    &lt;/table&gt;&gt;;];
-  Sphere;
-  Cube;
-  Tetrahedron;
-  
-  edge [dir = back; arrowtail = empty; style = &quot;&quot;;];
-  Shape -&gt; TwoDiagramShape;
-  Shape -&gt; ThreeDiagramShape;
-  
-  TwoDiagramShape -&gt; Circle;
-  TwoDiagramShape -&gt; Square;
-  TwoDiagramShape -&gt; Triangle;
-  
-  ThreeDiagramShape -&gt; Sphere;
-  ThreeDiagramShape -&gt; Cube;
-  ThreeDiagramShape -&gt; Tetrahedron;
-}<div class="dropdown admonition">
+<figure class="align-default" id="id1">
+<img alt="../../../_images/class_hierarchy.svg" src="../../../_images/class_hierarchy.svg" /><figcaption>
+<p><span class="caption-text">Class Hierarchy</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="dropdown admonition">
 <p class="admonition-title">点击查看解答参考</p>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
