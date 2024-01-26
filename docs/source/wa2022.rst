@@ -4,7 +4,7 @@
 
 回忆人: 未知.
 
-基于该回忆内容制作的模拟题: :doc:`/src/wa2022_simulation/index`.
+基于该回忆内容制作的模拟题: :doc:`wa2022_simulation/index`.
 
 .. warning::
 

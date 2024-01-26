@@ -2,7 +2,7 @@
 
   忘了原题, 这个难度和考点类似而要写的代码更多.
 
-  建议直接做 :doc:`/src/jrz2022/index` 最后 1 题, 考点和做法是一样的.
+  建议直接做 :doc:`jrz2022/index` 最后 1 题, 考点和做法是一样的.
 
 Implement the :cpp:`Shape` hierarchy designed in the picture below.
 
