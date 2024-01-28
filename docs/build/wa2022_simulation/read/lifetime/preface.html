@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>题目中所使用的类 &mdash; 计软智网转专业试题回忆版、模拟题及参考解答 v1.0.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=eafc0fe6" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=12f31cd9"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = '';</script>
+        <script>let toggleHintHide = '';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="1. 自动生命周期（automatic lifetime）" href="automatic_lifetime.html" />
+    <link rel="prev" title="1. 对象的生命周期/存储周期（带输出的构造与析构）" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            计软智网转专业试题回忆版、模拟题及参考解答
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../solution_preface.html">解答参考的说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../jrz2020/index.html">计软智 2020 年试题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../jrz2021/index.html">计软智 2021 年试题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../jrz2022/index.html">计软智 2022 年试题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../jrz2023/index.html">计软智 2023 年试题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../wa2022.html">网安 2022 年回忆内容</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">网安 2022 年模拟题</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">1. 阅读程序题</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">1. 对象的生命周期/存储周期（带输出的构造与析构）</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">题目中所使用的类</a></li>
+<li class="toctree-l4"><a class="reference internal" href="automatic_lifetime.html">1. 自动生命周期（automatic lifetime）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="static_lifetime.html">2. 静态生命周期（static lifetime）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamic_lifetime.html">3. 动态生命周期（dynamic lifetime）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="temporaries.html">4. 临时对象（temporaries）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mix.html">5. 综合题</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exception/index.html">2. 异常的抛出与捕获</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pointer_carray_and_cstring.html">3. 指针运算、C风格数组和C风格字符串</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../class_hierarchy.html">4. 类层次/继承/面向对象程序设计</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../recursion.html">5. 递归函数</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../fill.html">2. 补全程序题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../programming/index.html">3. 编写程序题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../short_answer.html">4. 简答题</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../wa2023/index.html">网安 2023 年试题</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">计软智网转专业试题回忆版、模拟题及参考解答</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">网安 2022 年模拟题</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">1. 阅读程序题</a></li>
+          <li class="breadcrumb-item"><a href="index.html">1. 对象的生命周期/存储周期（带输出的构造与析构）</a></li>
+      <li class="breadcrumb-item active">题目中所使用的类</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/wa2022_simulation/read/lifetime/preface.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>题目中所使用的类<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>为了提高可读性, 部分地方采用了 C++20 的语法进行初始化, 见下文.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>ctor:        非拷贝构造时输出的字符串（模拟题中只会有一个字符）
+<span class="linenos">2</span>copy_ctor:   拷贝构造时输出的字符串（模拟题中只会有一个字符）
+<span class="linenos">3</span>copy_assign: 拷贝赋值时输出的字符串（模拟题中只会有一个字符）
+<span class="linenos">4</span>dtor:        析构时输出的字符串（模拟题中只会有一个字符）
+</pre></div>
+</div>
+<section id="class-printer">
+<h2><code class="code highlight cpp docutils literal highlight-cpp"><span class="k">class</span><span class="w"> </span><span class="nc">Printer</span></code><a class="headerlink" href="#class-printer" title="Link to this heading"></a></h2>
+<p>在非拷贝构造, 被用于拷贝构造, 被用于拷贝赋值, 析构时输出对应的字符串.</p>
+<p>例如,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">auto</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 2</span><span class="w">  </span><span class="c1">// 构造时输出 &quot;0&quot;, 被用于拷贝赋值时输出 &quot;1&quot;, 析构时输出 &quot;2&quot;, 其余情况不输出</span>
+<span class="linenos"> 3</span><span class="w">  </span><span class="n">Printer</span><span class="w"> </span><span class="n">c1</span><span class="p">{</span><span class="n">Info</span><span class="p">{.</span><span class="n">ctor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;0&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">copy_assign</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">dtor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;2&quot;</span><span class="p">}};</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="w">  </span><span class="c1">// 构造时输出 &quot;3&quot;, 析构时输出 &quot;4&quot;, 其余情况不输出</span>
+<span class="linenos"> 6</span><span class="w">  </span><span class="n">Printer</span><span class="w"> </span><span class="n">c2</span><span class="p">{</span><span class="n">Info</span><span class="p">{.</span><span class="n">ctor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;3&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">dtor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;4&quot;</span><span class="p">}};</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="w">  </span><span class="c1">// 输出 &quot;1&quot;, 并且之后 c2.info == c1.info</span>
+<span class="linenos"> 9</span><span class="w">  </span><span class="c1">// 即构造时输出 &quot;0&quot;, 被用于拷贝赋值时输出 &quot;1&quot;, 析构时输出 &quot;2&quot;, 其余情况不输出</span>
+<span class="linenos">10</span><span class="w">  </span><span class="n">c2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">c1</span><span class="p">;</span>
+<span class="linenos">11</span><span class="p">}</span>
+<span class="linenos">12</span><span class="c1">// 最终输出</span>
+<span class="linenos">13</span><span class="c1">// 0: c1 构造</span>
+<span class="linenos">14</span><span class="c1">// 3: c2 构造</span>
+<span class="linenos">15</span><span class="c1">// 1: c2 = c1;</span>
+<span class="linenos">16</span><span class="c1">// 2: c2 析构</span>
+<span class="linenos">17</span><span class="c1">// 2: c1 析构</span>
+</pre></div>
+</div>
+</section>
+<section id="class-derivedprinter-public-printer">
+<h2><code class="code highlight cpp docutils literal highlight-cpp"><span class="k">class</span><span class="w"> </span><span class="nc">DerivedPrinter</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Printer</span></code><a class="headerlink" href="#class-derivedprinter-public-printer" title="Link to this heading"></a></h2>
+<p>继承自 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Printer</span></code>, 遵循继承的逻辑,</p>
+<ul class="simple">
+<li><p>构造/赋值时先构造/赋值 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Printer</span></code>, 再构造/赋值 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">DerivedPrinter</span></code>.</p></li>
+<li><p>析构时先析构 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">DerivedPrinter</span></code>, 再析构 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Printer</span></code>.</p></li>
+<li><p>拷贝时发生切片, 只拷贝静态类型部分, 这部分内容可参考 <a class="reference external" href="https://gitee.com/cpp_tutorial/question/issues/I7ARBT">如何理解虚函数</a>, 但注意那是逻辑上的感性解释.</p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">auto</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 2</span><span class="w">  </span><span class="c1">// 构造时输出 &quot;03&quot;, 正常被用于拷贝时输出 &quot;14&quot;, 析构时输出 &quot;52&quot;, 其余情况不输出</span>
+<span class="linenos"> 3</span><span class="w">  </span><span class="n">DerivedPrinter</span><span class="w"> </span><span class="n">c1</span><span class="p">{</span><span class="n">Info</span><span class="p">{.</span><span class="n">ctor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;0&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">copy_ctor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">dtor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;2&quot;</span><span class="p">},</span>
+<span class="linenos"> 4</span><span class="w">                    </span><span class="n">DerivedInfo</span><span class="p">{.</span><span class="n">ctor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;3&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">copy_ctor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;4&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">dtor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;5&quot;</span><span class="p">}};</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="w">  </span><span class="c1">// 拷贝时发生切片, 仅拷贝了此处的静态类型, 即 `Printer` 部分</span>
+<span class="linenos"> 7</span><span class="w">  </span><span class="c1">//   最终仅得到 Info{.ctor = &quot;0&quot;, .copy_ctor = &quot;1&quot;, .dtor = &quot;2&quot;} 部分</span>
+<span class="linenos"> 8</span><span class="w">  </span><span class="c1">// 输出 &quot;1&quot;, 并且之后 c2.info = c1.info</span>
+<span class="linenos"> 9</span><span class="w">  </span><span class="c1">// 即构造时输出 &quot;0&quot;, 被用于拷贝构造时输出 &quot;1&quot;, 析构时输出 &quot;2&quot;, 其余情况不输出</span>
+<span class="linenos">10</span><span class="w">  </span><span class="n">Printer</span><span class="w"> </span><span class="n">c2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">c1</span><span class="p">;</span>
+<span class="linenos">11</span><span class="p">}</span>
+<span class="linenos">12</span><span class="c1">// 最终输出</span>
+<span class="linenos">13</span><span class="c1">// 0: c1 Printer 部分构造</span>
+<span class="linenos">14</span><span class="c1">// 3: c1 DerivedPrinter 部分构造</span>
+<span class="linenos">15</span><span class="c1">// 1: Printer c2 = c1; 发生切片, 仅拷贝 Printer 部分</span>
+<span class="linenos">16</span><span class="c1">// 2: c2 析构</span>
+<span class="linenos">17</span><span class="c1">// 5: c1 DerivedPrinter 部分析构</span>
+<span class="linenos">18</span><span class="c1">// 2: c1 Printer 部分析构</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="1. 对象的生命周期/存储周期（带输出的构造与析构）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="automatic_lifetime.html" class="btn btn-neutral float-right" title="1. 自动生命周期（automatic lifetime）" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, FeignClaims。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

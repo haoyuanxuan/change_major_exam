@@ -11,11 +11,11 @@
   :caption: 目录
   :maxdepth: 1
 
-  src/solution_preface.rst
-  src/jrz2020/index.rst
-  src/jrz2021/index.rst
-  src/jrz2022/index.rst
-  src/jrz2023/index.rst
-  src/wa2022.rst
-  src/wa2022_simulation/index.rst
-  src/wa2023/index.rst
+  solution_preface.rst
+  jrz2020/index.rst
+  jrz2021/index.rst
+  jrz2022/index.rst
+  jrz2023/index.rst
+  wa2022.rst
+  wa2022_simulation/index.rst
+  wa2023/index.rst
