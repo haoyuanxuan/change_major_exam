@@ -9,7 +9,7 @@
 project = '计软智网转专业试题回忆版、模拟题及参考解答'
 copyright = '2024, FeignClaims'
 author = 'FeignClaims'
-release = 'v1.0.0'
+html_title = f'{project}'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
