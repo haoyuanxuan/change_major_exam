@@ -57,8 +57,8 @@ html_theme_options = {
         },
         {
             "name": "部署状态",
-            "url": "https://github.com/FeignClaims/change_major_exam/actions/workflows/ci.yml",
-            "icon": "https://github.com/FeignClaims/change_major_exam/actions/workflows/ci.yml/badge.svg",
+            "url": "https://readthedocs.org/projects/change-major-exam/",
+            "icon": "https://readthedocs.org/projects/change-major-exam/badge/?version=latest",
             "type": "url",
         }
     ],
@@ -73,4 +73,3 @@ git_last_updated_timezone = 'Asia/Shanghai'
 def setup(app):
     app.add_css_file("custom.css")
     app.add_css_file("monofont.css")
-    app.add_js_file("no_cache.js")
