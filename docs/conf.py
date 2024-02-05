@@ -28,8 +28,8 @@ extensions = [
 
 extlinks = {'godbolt': ('https://godbolt.org/z/%s', '[在线代码 %s]')}
 
-togglebutton_hint = ""
-togglebutton_hint_hide = ""
+togglebutton_hint = "点击展开"
+togglebutton_hint_hide = "点击隐藏"
 
 templates_path = ['_templates']
 exclude_patterns = []
