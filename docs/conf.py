@@ -22,6 +22,7 @@ extensions = [
     'sphinx_design',
     'sphinx_examples',
     'sphinx_last_updated_by_git',
+    'sphinx_sitemap',
     'sphinx_tabs.tabs',
     'sphinx_togglebutton',
 ]
@@ -78,6 +79,9 @@ html_favicon = '_static/favicon.png'
 html_search_language = 'zh'
 html_last_updated_fmt = '%Y-%m-%d %H:%M:%S'
 git_last_updated_timezone = 'Asia/Shanghai'
+html_baseurl = 'https://change-major-exam.readthedocs.io/'
+sitemap_filename = 'sitemapindex.xml'
+html_extra_path = ['robots.txt']
 
 
 def setup(app):
