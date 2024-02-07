@@ -8,7 +8,7 @@ The program implements a class called :cpp:`Set`, which can store any number of 
 
 - :cpp:`int size_`
 
-  - The member that indicates the amount of :cpp:`std::string` objects; if no object exists :cpp:`size_ == 0`.
+  - The member that indicates the amount of :cpp:`std::string` objects; if no object exists, :cpp:`size_ == 0`.
 
 - Element uniqueness
 

@@ -8,7 +8,7 @@ Implement a class called :cpp:`Polynomial`, which holds a polynomial (eg. :math:
 
   - Users should observe an ascendingly sorted polynomial. That is, :math:`2x^2 + 3 + x` should be observed as :math:`3 + x + 2x^2`.
 
-- For terms with 0 as coefficient, the observable state shows as if the term dosen't exsit. That is, :math:`0x^2 + x^3` should be observed as `x^3`.
+- For terms with 0 as coefficient, the observable state shows as if the term dosen't exsit. That is, :math:`0x^2 + x^3` should be observed as :math:`x^3`.
 
 You should implement the following functions for it,
 
@@ -39,7 +39,7 @@ After that, write a main function to test all your public functions.
 
     - 用户应该观察到一个升序的有序多项式. 即, :math:`2x^2 + 3 + x` 应该被观察为 :math:`3 + x + 2x^2`.
 
-  - 对于系数是 0 的项, 观察结果就好像该项不存在一样. 即, :math:`0x^2 + x^3` 应该被观察为 `x^3`.
+  - 对于系数是 0 的项, 观察结果就好像该项不存在一样. 即, :math:`0x^2 + x^3` 应该被观察为 :math:`x^3`.
 
   你应该为它实现以下函数.
 

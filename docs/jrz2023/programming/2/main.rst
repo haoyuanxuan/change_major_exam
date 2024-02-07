@@ -4,7 +4,7 @@
 
 .. hint::
 
-  与 :doc:`jrz2020/index` 第 4 题极为相似.
+  与 :doc:`/jrz2020/index` 第 4 题极为相似.
 
 .. warning::
 

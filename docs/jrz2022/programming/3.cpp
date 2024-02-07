@@ -29,7 +29,7 @@ class Customer {
 };
 
 auto main() -> int {
-  Date d1(2022, 6, 18);  // 题目中此处应该是笔误，dt 改为 d1
+  Date d1(2022, 6, 18);
   Customer c1("11000001", d1);
   c1.selectItem("cup", 2, 9.2);
   c1.selectItem("jacket", 1, 50);

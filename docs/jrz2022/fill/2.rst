@@ -32,7 +32,7 @@ According to the following output results, fill in the blanks in the following p
 
   :godbolt:`nbah511bP`
 
-  1. :cpp:`char* src`, 传递字符串，在线代码中因为一些原因写成了 :cpp:`char const* src`.
+  1. :cpp:`char const* src`, 传递字符串.
 
   2. :cpp:`{}`, 将数组全部初始化为 :cpp:`0`.
 

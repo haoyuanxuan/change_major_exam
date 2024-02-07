@@ -30,7 +30,7 @@
     Printer c2{Info{.ctor = "3", .dtor = "4"}};
 
     // 输出 "1", 并且之后 c2.info == c1.info
-    // 即构造时输出 "0", 被用于拷贝赋值时输出 "1", 析构时输出 "2", 其余情况不输出
+    // 即此后构造时输出 "0", 被用于拷贝赋值时输出 "1", 析构时输出 "2", 其余情况不输出
     c2 = c1;
   }
   // 最终输出
@@ -47,7 +47,7 @@
 
 - 构造/赋值时先构造/赋值 :cpp:`Printer`, 再构造/赋值 :cpp:`DerivedPrinter`.
 - 析构时先析构 :cpp:`DerivedPrinter`, 再析构 :cpp:`Printer`.
-- 拷贝时发生切片, 只拷贝静态类型部分, 这部分内容可参考 `如何理解虚函数 <https://gitee.com/cpp_tutorial/question/issues/I7ARBT>`_, 但注意那是逻辑上的感性解释.
+- 拷贝时发生切片, 只拷贝静态类型部分, 这部分内容可参考 `虚函数调用的感性理解 <https://question-board.readthedocs.io/faq/virtual_function_invocation_explain/main.html>`_, 但注意那是逻辑上的感性解释.
 
 .. code-block:: cpp
   :linenos:
@@ -60,7 +60,7 @@
     // 拷贝时发生切片, 仅拷贝了此处的静态类型, 即 `Printer` 部分
     //   最终仅得到 Info{.ctor = "0", .copy_ctor = "1", .dtor = "2"} 部分
     // 输出 "1", 并且之后 c2.info = c1.info
-    // 即构造时输出 "0", 被用于拷贝构造时输出 "1", 析构时输出 "2", 其余情况不输出
+    // 即此后构造时输出 "0", 被用于拷贝构造时输出 "1", 析构时输出 "2", 其余情况不输出
     Printer c2 = c1;
   }
   // 最终输出
