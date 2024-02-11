@@ -1,4 +1,4 @@
-输入输出的实现更建议参考 `运算符重载（C++98） <https://weekly-questions.readthedocs.io/2021_2022_spring/week_02/doc/>`_.
+输入输出的实现更建议参考 `运算符重载 (C++98) <https://weekly-questions.readthedocs.io/2021_2022_spring/week_02/doc/>`_.
 
 :godbolt:`fxM3noKMG`
 
@@ -64,9 +64,8 @@
 
     friend auto operator>>(std::istream& istream, Ip& ip) -> std::istream& {
       // 这里输入也应该检测 IP 是不是在范围内, 这是 Ip 类的不变式
-      // 一种方式是输入数据成员, 然后利用现有的构造函数（其中会判定 IP
-      // 是不是在范围内）和拷贝赋值函数进行
-      // 另一种是把判定不变式抽象为一个函数, 在输入完成后调用
+      // - 一种方式是输入数据成员, 然后利用现有的构造函数 (其中会判定 IP 是不是在范围内) 和拷贝赋值函数进行
+      // - 另一种是把判定不变式抽象为一个函数, 在输入完成后调用
 
       bool is_good = false;
 

@@ -54,7 +54,7 @@ The following has given part of the :cpp:`Set`'s implementation and the :cpp:`ma
 
   - 元素唯一性
 
-    - 对于 :cpp:`data_` 中存储的 :cpp:`std::string` 对象, 不存在两个对象 :cpp:`string1` 和 :cpp:`string2`, 使得 :cpp:`string1 == string2` （称为相等）成立.
+    - 对于 :cpp:`data_` 中存储的 :cpp:`std::string` 对象, 不存在两个对象 :cpp:`string1` 和 :cpp:`string2`, 使得 :cpp:`string1 == string2` (称为相等) 成立.
     - 同时, 当插入新对象时, 若 :cpp:`data_` 中已存在相等的对象时, 则不进行插入.
 
   为其实现,

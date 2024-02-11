@@ -1,6 +1,6 @@
-*****************
+************************************************************************************************************************
 4. (20 scores)
-*****************
+************************************************************************************************************************
 
 Programming for under graduate students graduation audits: read basic information, according to the requirements of graduation audit, output the information into ``studentGradutate.data`` file.
 
