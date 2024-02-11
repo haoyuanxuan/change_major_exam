@@ -17,6 +17,7 @@ html_title = f'{project}'
 extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.graphviz',
+    'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx_copybutton',
     'sphinx_design',
@@ -26,6 +27,11 @@ extensions = [
     'sphinx_tabs.tabs',
     'sphinx_togglebutton',
 ]
+
+intersphinx_mapping = {
+    "question_board": ("https://question-board.readthedocs.io/", None),
+}
+intersphinx_disabled_reftypes = ["*"]
 
 extlinks = {'godbolt': ('https://godbolt.org/z/%s', '[在线代码 %s]')}
 

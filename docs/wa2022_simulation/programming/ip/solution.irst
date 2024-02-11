@@ -1,4 +1,4 @@
-输入输出的实现更建议参考 `运算符重载 (C++98) <https://weekly-questions.readthedocs.io/2021_2022_spring/week_02/doc/>`_.
+输入输出的实现更建议参考 :ref:`运算符重载 <question_board:faq_运算符重载>`.
 
 :godbolt:`fxM3noKMG`
 
