@@ -66,8 +66,7 @@ html_theme_options = {
         {
             "name": "Gitee",
             "url": "https://gitee.com/FeignClaims/change_major_exam",
-            "icon": "https://simpleicons.org/icons/gitee.svg",
-            "type": "url",
+            "icon": "fa-brands fa-gitee",
         },
         {
             "name": "部署状态",
@@ -100,3 +99,5 @@ html_extra_path = ['robots.txt']
 def setup(app):
     app.add_css_file("custom.css")
     app.add_css_file("monofont.css")
+
+    app.add_js_file("custom_icon.js")
