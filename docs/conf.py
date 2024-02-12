@@ -64,6 +64,11 @@ html_theme_options = {
             "icon": "fa-brands fa-github",
         },
         {
+            "name": "Gitee",
+            "url": "https://gitee.com/FeignClaims/change_major_exam",
+            "icon": "fa-brands fa-git-alt",
+        },
+        {
             "name": "部署状态",
             "url": "https://readthedocs.org/projects/change-major-exam/",
             "icon": "https://readthedocs.org/projects/change-major-exam/badge/?version=latest",
