@@ -84,15 +84,22 @@
   :linenos:
 ```
 
+### 解答参考/答案的书写
+
+如果题目不存在唯一解, 请使用 "解答参考"; 如果题目存在唯一解, 请使用 "答案".
+
+只要有可能, 为解答参考/答案提供在线代码链接.
+
+```rest
+.. admonition:: 点击查看解答参考
+  :class: dropdown
+```
+
 ### 引用
 
 #### 在线代码
 
 请通过 [Compiler Explorer - 单文件](https://godbolt.org/z/jTY7jbrh4) 或 [Compiler Explorer 多文件](https://godbolt.org/z/38EK7hExj) 创建分享短链, 以 `` :godbolt:`分享码` `` 的形式引用 `https://godbolt.org/z/分享码`.
-
-#### C++ 核心准则
-
-请点击 [C++ 核心准则](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) 内容标题右边的链接符号, 复制对应的跳转链接, 以 `` :coreguidelines:`p3-express-intent` `` 的形式引用 `https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#p3-express-intent`.
 
 #### 外部链接
 

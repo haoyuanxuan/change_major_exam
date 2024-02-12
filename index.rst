@@ -13,10 +13,16 @@
   无论是计软智试题还是网安试题均可作为转计软智网的参考题, 即不存在 "计软智只能参考计软智试题网安只能参考网安试题" 这样的大区别.
 
 .. toctree::
-  :caption: 目录
+  :caption: 关于文档
   :maxdepth: 1
 
   solution_preface.rst
+  CONTRIBUTING.md
+
+.. toctree::
+  :caption: 回忆试题
+  :maxdepth: 1
+
   jrz2020/index.rst
   jrz2021/index.rst
   jrz2022/index.rst
