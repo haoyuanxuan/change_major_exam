@@ -66,7 +66,8 @@ html_theme_options = {
         {
             "name": "Gitee",
             "url": "https://gitee.com/FeignClaims/change_major_exam",
-            "icon": "fa-brands fa-git-alt",
+            "icon": "https://simpleicons.org/icons/gitee.svg",
+            "type": "url",
         },
         {
             "name": "部署状态",
