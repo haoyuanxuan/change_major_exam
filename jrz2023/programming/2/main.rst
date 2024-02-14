@@ -69,4 +69,4 @@
 
   题目代码虽然给出了指针, 暗示需要 :cpp:`new` 一个动态数组, 但其实可以在实现时用 :cpp:`std::set` 取巧简化. 简化后最复杂的代码反而是笔者无聊加上的输出格式要求.
 
-  不使用 :cpp:`std::set` 地, 你可以用 :cpp:`std::vector` 和 STL 算法 :cpp:`std::sort`、:cpp:`std::unique`、:cpp:`std::merge` 简单实现: :godbolt:`bEe7YGsbf`.
+  不使用 :cpp:`std::set` 地, 你可以用 :cpp:`std::vector` 和 STL 算法 :cpp:`std::sort`、:cpp:`std::unique` 简单实现: :godbolt:`WcMPos6ab`.
