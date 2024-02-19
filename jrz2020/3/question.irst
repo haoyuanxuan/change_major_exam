@@ -16,6 +16,7 @@ Note: The length of the wanted character string and the given string may be diff
 For example,
 
 .. code-block:: text
+  :linenos:
 
   input:
     string: C++11 is like a new language.

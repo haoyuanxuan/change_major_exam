@@ -12,6 +12,7 @@ Connect them, change the punctuation and convert the lowercase letters into uppe
 For example,
 
 .. code-block:: text
+  :linenos:
 
   input:
     Hello C++!

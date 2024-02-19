@@ -12,6 +12,7 @@
   :godbolt:`7v8Mc5z4r`
 
   .. code-block:: text
+    :linenos:
 
     A
     B

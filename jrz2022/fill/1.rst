@@ -10,6 +10,7 @@ The following program implements finding the smallest number, the output is as f
   以下程序实现了查找最小值, 输出如下所示, 请补全它.
 
 .. code-block:: text
+  :linenos:
 
   Output:
   1
