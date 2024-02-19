@@ -12,7 +12,6 @@
   :godbolt:`c383KGTq5`
 
   .. code-block:: text
-    :linenos:
 
     10
     26

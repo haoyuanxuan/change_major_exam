@@ -10,7 +10,6 @@ According to the following output results, fill in the blanks in the following p
   根据以下输出结果, 填写下面程序中的空白.
 
 .. code-block:: text
-  :linenos:
 
   Output:
   1 3

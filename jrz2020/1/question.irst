@@ -10,7 +10,6 @@ What's more, the program should apply to as large a number as possible.
 For example,
 
 .. code-block:: text
-  :linenos:
 
   input: 123456.01
   output: 壹拾贰万叁仟肆佰伍拾陆元壹分

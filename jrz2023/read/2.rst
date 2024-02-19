@@ -12,7 +12,6 @@
   :godbolt:`hazo3oKej`
 
   .. code-block:: text
-    :linenos:
 
     tpgtahc
     7

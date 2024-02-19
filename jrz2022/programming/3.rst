@@ -16,7 +16,6 @@ Complete 3 classes called :cpp:`Date`, :cpp:`Item` and :cpp:`Customer`. Make the
 
 .. literalinclude:: 3.txt
   :language: text
-  :linenos:
   :caption: output
 
 .. admonition:: 点击查看解答参考

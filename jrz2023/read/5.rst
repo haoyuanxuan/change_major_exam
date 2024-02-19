@@ -12,7 +12,6 @@
   :godbolt:`K8EYs55G3`
 
   .. code-block:: text
-    :linenos:
 
     Aid:A102
     Aid:A101
