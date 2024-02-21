@@ -68,12 +68,6 @@ html_theme_options = {
             "name": "Gitee",
             "url": "https://gitee.com/FeignClaims/change_major_exam",
             "icon": "fa-custom fa-gitee",
-        },
-        {
-            "name": "部署状态",
-            "url": "https://readthedocs.org/projects/change-major-exam/",
-            "icon": "https://readthedocs.org/projects/change-major-exam/badge/?version=latest",
-            "type": "url",
         }
     ],
     'repository_url': 'https://github.com/FeignClaims/change_major_exam',
