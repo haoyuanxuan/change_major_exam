@@ -36,7 +36,7 @@ According to the following output results, fill in the blanks in the following p
 
   2. :cpp:`{}`, 将数组全部初始化为 :cpp:`0`.
 
-  3. :cpp:`'\0'`, C风格字符串的终止条件是达到了终止字符 :cpp:`'\0'`.
+  3. :cpp:`'\\0'`, C风格字符串的终止条件是达到了终止字符 :cpp:`'\\0'`.
 
   4. :cpp:`*src++`, 两个功能: 返回当前指针指向的字符, 让对应的计数加一; :cpp:`++` 从而向后继续遍历.
 
