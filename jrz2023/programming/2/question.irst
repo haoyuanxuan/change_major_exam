@@ -1,0 +1,88 @@
+Please complete the program while keeping interfaces and implementations seperated.
+
+The program implements a class called :cpp:`List`, which can store any number of :cpp:`std::string` objects, and satisfies the following invariants,
+
+- :cpp:`std::string* data_`
+
+  - The member that holds all :cpp:`std::string` objects; if no object exists, :cpp:`data_ == nullptr`.
+
+- :cpp:`int size_`
+
+  - The member that indicates the amount of :cpp:`std::string` objects; if no object exists, :cpp:`size_ == 0`.
+
+- Element uniqueness
+
+  - For any two different objects :cpp:`string1` and :cpp:`string2` holded by :cpp:`data_`, :cpp:`string1 == string2` (equality) should not be true.
+  - Also, when inserting a new object, the insertion should not happen if there's already an equal object.
+
+You should implement the following functions for it,
+
+- Constructor :cpp:`List(std::string* data, int size)`
+
+  - Insert all elements inside :cpp:`[data, data + size)` into :cpp:`data_`.
+
+- Copy constructor
+- Copy assignment
+- :cpp:`auto operator+=(List const& other) -> List&`
+
+  - Insert all elements inside :cpp:`other` into :cpp:`*this`.
+
+- :cpp:`friend auto operator+(List const& lhs, List const& rhs) -> List`
+
+  - Merge two :cpp:`List` as a :cpp:`List`.
+
+- :cpp:`friend auto operator<<(std::ostream& ostream, List const& list) -> std::ostream&`
+
+  - Output the stored :cpp:`std::string` objects with the format :code:`[element_1, element_2, ..., element_n]`.
+
+The following has given part of the :cpp:`List`'s implementation and the :cpp:`main()` function.
+
+.. admonition:: 翻译
+  :class: dropdown
+
+  请保持接口与实现相分离地完成程序.
+
+  该程序实现了一个类 :cpp:`List`, 它可以存储任意数量的 :cpp:`std::string` 对象, 且满足以下不变式,
+
+  - :cpp:`std::string* data_`
+
+    - 保存存储的 :cpp:`std::string` 对象; 当不存储有 :cpp:`std::string` 对象时, :cpp:`data_` 为空指针.
+
+  - :cpp:`int size_`
+
+    - 表示存储的 :cpp:`std::string` 数量; 当不存储有 :cpp:`std::string` 对象时, :cpp:`size_ == 0`.
+
+  - 元素唯一性
+
+    - 对于 :cpp:`data_` 中存储的 :cpp:`std::string` 对象, 不存在两个对象 :cpp:`string1` 和 :cpp:`string2`, 使得 :cpp:`string1 == string2` (称为相等) 成立.
+    - 同时, 当插入新对象时, 若 :cpp:`data_` 中已存在相等的对象时, 则不进行插入.
+
+  为其实现,
+
+  - 构造函数 :cpp:`List(std::string* data, int size)`
+
+    - 将 :cpp:`[data, data + size)` 中的元素加入 :cpp:`data_` 中.
+
+  - 拷贝构造函数
+  - 拷贝赋值函数
+  - :cpp:`auto operator+=(List const& other) -> List&`
+
+    - 将 :cpp:`other` 中的元素加入 :cpp:`*this` 中.
+
+  - :cpp:`friend auto operator+(List const& lhs, List const& rhs) -> List`
+
+    - 合并两个 :cpp:`Set` 为一个新的 :cpp:`Set`.
+
+  - :cpp:`friend auto operator<<(std::ostream& ostream, List const& list) -> std::ostream&`
+
+    - 按 :cpp:`[元素1, 元素2, ..., 元素n]` 的格式输出存储的 :cpp:`std::string` 对象.
+
+.. literalinclude:: my_list.hpp
+  :language: cpp
+  :linenos:
+  :caption: list.hpp
+
+.. literalinclude:: main.cpp
+  :language: cpp
+  :linenos:
+  :caption: main.cpp
