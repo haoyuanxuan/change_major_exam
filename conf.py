@@ -87,7 +87,13 @@ git_last_updated_timezone = 'Asia/Shanghai'
 html_baseurl = 'https://change-major-exam.readthedocs.io/'
 sitemap_filename = 'sitemapindex.xml'
 sitemap_url_scheme = '{link}'
-html_extra_path = ['robots.txt']
+html_extra_path = [
+    'robots.txt',
+    '_verification/5e34747cf23e02efb98960efb9a89f27.txt',
+    '_verification/baidu_verify_codeva-dckf2PIPnk.html',
+    '_verification/google13ac7719c05e0aea.html',
+    '_verification/sogousiteverification.txt',
+]
 
 
 def setup(app):
