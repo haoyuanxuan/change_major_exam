@@ -80,7 +80,7 @@ The following has given part of the :cpp:`List`'s implementation and the :cpp:`m
 .. literalinclude:: my_list.hpp
   :language: cpp
   :linenos:
-  :caption: list.hpp
+  :caption: my_list.hpp
 
 .. literalinclude:: main.cpp
   :language: cpp
