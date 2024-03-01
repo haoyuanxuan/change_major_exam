@@ -28,22 +28,22 @@
     
     2023 年转专业考试时存在部分考试机房只安装了 VS 2010, 可能没有这两个函数, 则可以用 :cpp:`std::stringstream` 进行.
   
-  .. code-block:: cpp
-    :linenos:
+    .. code-block:: cpp
+      :linenos:
 
-    #include <cstdlib>
-    #include <sstream>
-    #include <string>
+      #include <cstdlib>
+      #include <sstream>
+      #include <string>
 
-    auto stoi(std::string const& string) -> int {
-      int value;
-      std::stringstream ss(string);
-      ss >> value;
-      return value;
-    }
+      auto stoi(std::string const& string) -> int {
+        int value;
+        std::stringstream ss(string);
+        ss >> value;
+        return value;
+      }
 
-    auto to_string(int value) -> std::string {
-      std::stringstream ss;
-      ss << value;
-      return ss.str();
-    }
+      auto to_string(int value) -> std::string {
+        std::stringstream ss;
+        ss << value;
+        return ss.str();
+      }
