@@ -16,13 +16,14 @@
   :caption: 关于文档
   :maxdepth: 1
 
-  solution_preface.rst
+  board/index.rst
   CONTRIBUTING.md
 
 .. toctree::
   :caption: 回忆试题
   :maxdepth: 1
 
+  solution_preface.rst
   jrz2020/index.rst
   jrz2021/index.rst
   jrz2022/index.rst
