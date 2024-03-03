@@ -4,7 +4,7 @@ The program implements a class called :cpp:`Set`, which can store any number of 
 
 - :cpp:`std::string* data_`
 
-  - The member that holds all :cpp:`std::string` objects; if no object exists, :cpp:`data_ == nullptr`.
+  - The member that holds all :cpp:`std::string` objects.
 
 - :cpp:`int size_`
 
@@ -46,7 +46,7 @@ The following has given part of the :cpp:`Set`'s implementation and the :cpp:`ma
 
   - :cpp:`std::string* data_`
 
-    - 保存存储的 :cpp:`std::string` 对象; 当不存储有 :cpp:`std::string` 对象时, :cpp:`data_` 为空指针.
+    - 保存存储的 :cpp:`std::string` 对象.
 
   - :cpp:`int size_`
 
