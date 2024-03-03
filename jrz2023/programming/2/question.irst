@@ -77,6 +77,8 @@ The following has given part of the :cpp:`List`'s implementation and the :cpp:`m
 
     - 按 :cpp:`[元素1, 元素2, ..., 元素n]` 的格式输出存储的 :cpp:`std::string` 对象.
 
+  以下已给出 :cpp:`List` 的部分实现以及 :cpp:`main()` 函数.
+
 .. literalinclude:: my_list.hpp
   :language: cpp
   :linenos:
