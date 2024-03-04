@@ -63,7 +63,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
         with:
           source-repo: git@github.com:FeignClaims/change_major_exam.git
-          destination-repo: git@gitee.com:FeignClaims/change_major_exam.git
+          destination-repo: git@gitee.com:cpp_tutorial/change_major_exam.git
 
   publish:
     runs-on: ubuntu-latest
@@ -74,6 +74,6 @@ jobs:
         with:
           gitee-username: FeignClaims
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
-          gitee-repo: FeignClaims/change_major_exam
+          gitee-repo: cpp_tutorial/change_major_exam
           branch: docs
           directory: build
