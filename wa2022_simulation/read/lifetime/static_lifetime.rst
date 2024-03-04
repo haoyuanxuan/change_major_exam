@@ -6,29 +6,36 @@
 说明
 ========================================================================================================================
 
-此处专指静态局部变量.
+此处专指静态局部变量和全局变量.
 
-运行到它的名字时开始,  **程序结束时** 结束, 因此即使多次运行到, 也只会构造一次. 它的析构晚于自动生命周期对象.
+运行到它的名字时开始 (对于全局变量是在程序开始时),  **程序结束时** 结束, 因此即使多次运行到, 也只会构造一次. 它的析构晚于自动生命周期对象.
 
 .. code-block:: cpp
   :linenos:
 
+  Printer c1{Info{.ctor = "0", .dtor = "1"}};
+
   void function() {
-    static Printer c1{Info{.ctor = "0", .dtor = "1"}};
-    Printer c2{Info{.ctor = "2", .dtor = "3"}};
+    static Printer c2{Info{.ctor = "2", .dtor = "3"}};
+    Printer c3{Info{.ctor = "4", .dtor = "5"}};
   }
 
   auto main() -> int {
+    Printer c4{Info{.ctor = "6", .dtor = "7"}};
     function();
     function();
   }
   // 最终输出
-  // 0: c1 构造
-  // 2: 第一次调用时, c2 构造
-  // 3: 第一次调用时, c2 析构
-  // 2: 第二次调用时, c2 构造
-  // 3: 第二次调用时, c2 析构
-  // 1: c1 析构
+  // 0: 程序开始时, c1 构造
+  // 6: `main()` 运行到 `Printer c4` 时, c4 构造
+  // 2: `function()` 第一次运行到 `static Printer c2` 时, c2 构造
+  // 4: `function()` 第一次运行到 `Printer c3` 时, c3 构造
+  // 5: `function()` 第一次结束时, c3 析构
+  // 4: `function()` 第二次运行到 `Printer c3` 时, c3 构造
+  // 5: `function()` 第二次结束时, c3 析构
+  // 7: `main()` 结束时, c4 析构
+  // 3: 程序结束时, c2 析构
+  // 1: 程序结束时, c1 析构
 
 对象的生命周期按它开始的相反顺序结束.
 
@@ -102,9 +109,9 @@
 
   void function(Printer const& printer) { static Printer c1 = printer; }
 
-  auto main() -> int {
-    static Printer c1{Info{.ctor = "d", .copy_ctor = "m", .dtor = "r"}};
+  Printer c1{Info{.ctor = "d", .copy_ctor = "m", .dtor = "r"}};
 
+  auto main() -> int {
     {
       static Printer c2{Info{.ctor = "o", .copy_ctor = "l", .dtor = "o"}};
       function(c1);
