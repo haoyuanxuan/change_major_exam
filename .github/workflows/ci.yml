@@ -59,12 +59,16 @@ jobs:
     needs: build_and_commit
     steps:
       - name: Sync to gitee.com
-        uses: wearerequired/git-mirror-action@v1.2.0
+        uses: Wandalen/wretry.action@master
         env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
         with:
-          source-repo: git@github.com:FeignClaims/change_major_exam.git
-          destination-repo: git@gitee.com:cpp_tutorial/change_major_exam.git
+          attempt_limit: 3
+          attempt_delay: 2000
+          action: wearerequired/git-mirror-action@v1.2.0
+          with: |
+            source-repo: git@github.com:FeignClaims/change_major_exam.git
+            destination-repo: git@gitee.com:cpp_tutorial/change_major_exam.git
 
   publish:
     runs-on: ubuntu-latest
