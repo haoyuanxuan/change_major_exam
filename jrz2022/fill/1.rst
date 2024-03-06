@@ -5,7 +5,7 @@
 The following program implements finding the smallest number, the output is as following, please complement it.
 
 .. admonition:: 翻译
-  :class: dropdown
+  :class: dropdown, translation
 
   以下程序实现了查找最小值, 输出如下所示, 请补全它.
 
@@ -20,7 +20,7 @@ The following program implements finding the smallest number, the output is as f
   :linenos:
 
 .. admonition:: 点击查看解答参考
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`vdqPE4We1`
 

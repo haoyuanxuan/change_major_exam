@@ -12,7 +12,7 @@ Write an program to create a number tower and find out its length.
 Tips: You can use recursion to calculate from the bottom, length function, which caculate the maximum of length of the lower left number and lower right, and recurs to the upper floor.
 
 .. admonition:: 翻译
-  :class: dropdown
+  :class: dropdown, translation
 
   上面的图片表示了一个数塔.
 

@@ -4,7 +4,7 @@ Store two user input strings into c-style character arrays.
 Connect them, change the punctuation and convert the lowercase letters into uppercase letters for output.
 
 .. admonition:: 翻译
-  :class: dropdown
+  :class: dropdown, translation
 
   将两个用户输入的字符串存储到 C 风格字符数组中.
   连接两个字符串, 改变标点符号并将小写字母转换为大写字母, 然后输出.

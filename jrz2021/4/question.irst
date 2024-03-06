@@ -7,7 +7,7 @@ Tips:
 3. Interface and implementation are not necessarily separated.
 
 .. admonition:: 翻译
-  :class: dropdown
+  :class: dropdown, translation
 
   实现 :cpp:`Date` 和 :cpp:`FinalTest` 从而让 main 函数正确输出. 所有数据成员都应该是私用的.
 

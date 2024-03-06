@@ -95,7 +95,7 @@
   大多数情况下, :cpp:`static_cast<new_type>(expression)` 相当于以 :cpp:`new_type temp(expression);` 初始化了一个虚拟变量 :cpp:`temp`, 一个变量是一个不指向非静态数据成员的引用或一个对象.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`65jMzEePz`, 答案: :cpp:`microseconds`.
 
@@ -127,7 +127,7 @@
   12 个字符, :cpp:`std::vector<T>` 的特化版本, 证明了代理对象和 STL 容器不可兼得 (至少 C++23 以前) 的失败产物.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`EhzbfoPfv`, 答案: :cpp:`vector<bool>`.
 

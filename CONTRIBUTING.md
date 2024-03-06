@@ -92,7 +92,7 @@
 
 ```rest
 .. admonition:: 点击查看解答参考
-  :class: dropdown
+  :class: dropdown, solution
 ```
 
 ### 引用

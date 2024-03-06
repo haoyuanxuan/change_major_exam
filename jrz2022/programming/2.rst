@@ -11,7 +11,7 @@ A vector :math:`\overrightarrow{v}` on a two-dimensional plane can be expressed 
 Write the program to encapsulate the vector class :cpp:`CVector`, and verify the correctness of the :cpp:`CVector`.
 
 .. admonition:: 翻译
-  :class: dropdown
+  :class: dropdown, translation
 
   一个二维向量 :math:`\overrightarrow{v}` 可以被表示为 :math:`(a, b)`. 其基本运算定义如下:
 
@@ -22,7 +22,7 @@ Write the program to encapsulate the vector class :cpp:`CVector`, and verify the
   编写程序封装该向量类为 :cpp:`CVector`, 并验证 :cpp:`CVector` 的正确性.
 
 .. admonition:: 点击查看解答参考
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`87qo14WvK`
 

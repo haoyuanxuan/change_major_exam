@@ -9,7 +9,7 @@
 从 1 到 10000 中找到所有符合要求的数: 平方后拆成两个数 (好像是随意拆, 有一种符合就行) 相加后等于原来的数.
 
 .. admonition:: 点击查看解答参考
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`9dEh75sGY`
 

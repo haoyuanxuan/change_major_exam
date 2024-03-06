@@ -36,7 +36,7 @@
   4 个字符, C++98 用来表示空指针的值.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`ccW7Pj35f`, 答案: :code:`NULL`.
 

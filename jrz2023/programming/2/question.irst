@@ -38,7 +38,7 @@ You should implement the following functions for it,
 The following has given part of the :cpp:`List`'s implementation and the :cpp:`main()` function.
 
 .. admonition:: 翻译
-  :class: dropdown
+  :class: dropdown, translation
 
   请保持接口与实现相分离地完成程序.
 

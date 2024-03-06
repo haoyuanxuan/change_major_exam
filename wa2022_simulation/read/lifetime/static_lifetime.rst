@@ -105,7 +105,7 @@
    6 个字符, 标准库中可变长度的数组.
 
 .. admonition:: 点击查看答案
-   :class: dropdown
+   :class: dropdown, solution
 
    :godbolt:`ssPdneKo4`, 答案: :cpp:`vector`.
 
@@ -138,7 +138,7 @@
   12 个字符, 输入参数超出函数的定义域时抛出的异常.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`xc19YrYTY`, 答案: :cpp:`domain_error`.
 
@@ -173,6 +173,6 @@
   16 个字符, 在 :cpp:`std::string` 中查找最后一个不等于给定字符序列中任何字符的字符.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`67Kjb5c6s`, 答案: :cpp:`find_last_not_of`.

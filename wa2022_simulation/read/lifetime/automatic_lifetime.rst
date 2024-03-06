@@ -97,7 +97,7 @@ C风格数组的元素按下标顺序构造, 按逆序析构.
   7 个字符, 将 C 字符串转换为对应的 :cpp:`unsigned long long` 类型整数的方法.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`qM87cz5aE`, 答案: :cpp:`strtoull`.
 
@@ -128,7 +128,7 @@ C风格数组的元素按下标顺序构造, 按逆序析构.
   14 个字符, STL 判断范围是否已经划分.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`EPscshb6d`, 答案: :cpp:`is_partitioned`.
 
@@ -162,6 +162,6 @@ C风格数组的元素按下标顺序构造, 按逆序析构.
   12 个字符, 超出实现支持的长度限制时抛出的异常. 如当新容量大于 :cpp:`std::vector::max_size()` 时, :cpp:`std::vector::reserve` 会抛出此异常.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`T6acTT4vv`, 答案: :cpp:`length_error`.

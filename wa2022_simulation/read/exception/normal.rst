@@ -38,7 +38,7 @@
   3 个字符, 输入流读取到流结束时产生的标志.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`6nvf1bj5j`, 答案: :code:`EOF`.
 
@@ -78,7 +78,7 @@
   catch 判断是否匹配时, 与判断函数是否匹配的方式不同, 不正式地说, 它不会进行大部分隐式类型转换.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`7TEqd7arP`, 答案: :code:`cin`.
 
@@ -122,6 +122,6 @@
   5 个字符, 如何获取 vector 的首元素？
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`7nzo55zPv`, 答案: :code:`front`.

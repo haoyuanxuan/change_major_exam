@@ -5,7 +5,7 @@ Complete the following tasks using the :cpp:`ForwardList` provided below,
 3. Define a function template that consumes (get and pop element) all elements of the queue and print them out. After that, explicitly instantiate it with :cpp:`Queue1<char>` and specialize it with :cpp:`Queue2<int>`.
 
 .. admonition:: 翻译
-  :class: dropdown
+  :class: dropdown, translation
 
    用下面提供的 :cpp:`ForwardList<T>` 完成以下任务,
 

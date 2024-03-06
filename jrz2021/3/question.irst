@@ -27,7 +27,7 @@ You should implement the following functions for it,
 After that, write a main function to test all your public functions.
 
 .. admonition:: 翻译
-  :class: dropdown
+  :class: dropdown, translation
 
   实现一个类 :cpp:`Polynomial`, 它包含一个多项式 (如 :math:`ax^2 + bx^1`), 并且满足一下不变式.
 

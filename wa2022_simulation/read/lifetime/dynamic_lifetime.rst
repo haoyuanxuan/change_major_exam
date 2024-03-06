@@ -60,7 +60,7 @@
   4 个字符, 将 :cpp:`std::string` 转换为对应 :cpp:`int` 类型的方法.
 
 .. admonition:: 点击查看答案
-   :class: dropdown
+   :class: dropdown, solution
 
    :godbolt:`d3o6rf6hx`, 答案: :cpp:`stoi`.
 
@@ -106,7 +106,7 @@
   13 个字符, STL 求两个范围的内积.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`f4q4d117o`, 答案: :cpp:`inner_product`.
 
@@ -137,6 +137,6 @@
   7 个字符, 编程题解答参考中所用到的一个头文件.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`aWz5WYjTo`, 答案: :cpp:`sstream`.

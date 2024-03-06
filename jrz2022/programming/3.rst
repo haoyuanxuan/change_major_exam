@@ -5,7 +5,7 @@
 Complete 3 classes called :cpp:`Date`, :cpp:`Item` and :cpp:`Customer`. Make the following function named :cpp:`main` can output correctly.
 
 .. admonition:: 翻译
-  :class: dropdown
+  :class: dropdown, translation
 
   实现 :cpp:`Date`, :cpp:`Item` 和 :cpp:`Customer` 类, 使 :cpp:`main` 函数正确输出对应内容.
 
@@ -20,7 +20,7 @@ Complete 3 classes called :cpp:`Date`, :cpp:`Item` and :cpp:`Customer`. Make the
   :caption: output
 
 .. admonition:: 点击查看解答参考
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`1j9EaM8T9`
 

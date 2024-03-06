@@ -30,7 +30,7 @@
   }
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`dTPsYn65z`
 

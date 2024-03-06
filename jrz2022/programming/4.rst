@@ -43,12 +43,12 @@ Complete the following classes called :cpp:`Student`, :cpp:`UStudent`, :cpp:`GSt
   2004 Cindy 38 1 1 1
 
 .. admonition:: 翻译
-  :class: dropdown
+  :class: dropdown, translation
 
   .. include:: 4_translation.irst
 
 .. admonition:: 点击查看解答参考
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`x58TxMz53`
 

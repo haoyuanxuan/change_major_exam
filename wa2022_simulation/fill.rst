@@ -25,7 +25,7 @@
   }
 
 .. admonition:: 点击查看解答参考
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`Tn3sq7P4z`
 

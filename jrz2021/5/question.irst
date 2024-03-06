@@ -16,7 +16,7 @@ The program should print the object to which each :cpp:`vector` element points.
 - If a shape is a :cpp:`ThreeDimensionalShape`, display its area and volume.
 
 .. admonition:: 翻译
-  :class: dropdown
+  :class: dropdown, translation
 
   实现下面图片所示的 :cpp:`Shape` 类层次.
 

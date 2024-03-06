@@ -63,6 +63,6 @@
   49 个字符, ranges 库中用于返回值的结构体, 包含 "输入迭代器" 和 "是否找到" 数据成员.
 
 .. admonition:: 点击查看答案
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`47zEPz81h`, 答案: :cpp:`ranges::in_found_result::operator_in_found_result`.

@@ -5,7 +5,7 @@
 According to the following output results, fill in the blanks in the following programs.
 
 .. admonition:: 翻译
-  :class: dropdown
+  :class: dropdown, translation
 
   根据以下输出结果, 填写下面程序中的空白.
 
@@ -28,7 +28,7 @@ According to the following output results, fill in the blanks in the following p
   :linenos:
 
 .. admonition:: 点击查看解答参考
-  :class: dropdown
+  :class: dropdown, solution
 
   :godbolt:`nbah511bP`
 
