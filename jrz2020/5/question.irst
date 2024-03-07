@@ -9,7 +9,7 @@ Complete the following tasks using the :cpp:`ForwardList` provided below,
 
    用下面提供的 :cpp:`ForwardList<T>` 完成以下任务,
 
-   1. 私有继承 :cpp:`ForwardList<T>` 从而实现 :cpp:`Queue1<T>`.
+   1. 私用继承 :cpp:`ForwardList<T>` 从而实现 :cpp:`Queue1<T>`.
    2. 组合 :cpp:`ForwardList<T>` 从而实现 :cpp:`Queue2<T>`.
    3. 定义一个函数模板, 消耗 (即) 队列中的所有元素并打印. 然后, 用 :cpp:`Queue1<char>` 显式实例化它, 用 :cpp:`Queue2<int>` 特例化它.
 
