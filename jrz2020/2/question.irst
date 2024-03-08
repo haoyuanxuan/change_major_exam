@@ -10,14 +10,3 @@ of which the largest number is called the length of this number tower.
 Write an program to create a number tower and find out its length.
 
 Tips: You can use recursion to calculate from the bottom, length function, which caculate the maximum of length of the lower left number and lower right, and recurs to the upper floor.
-
-.. admonition:: 翻译
-  :class: dropdown, translation
-
-  上面的图片表示了一个数塔.
-
-  你需要从上往下移动, 每次都只选择一条路径并加上所对应的数字. 这样所得到的最大数字即为数塔的长度.
-
-  编写一个程序创造这个数塔并输出其长度.
-
-  提示: 你可以使用递归从底部计算长度. 先得到更底层左边数字和右边数字的最大值, 据此递归至更上层.

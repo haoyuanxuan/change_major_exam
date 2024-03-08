@@ -37,48 +37,6 @@ You should implement the following functions for it,
 
 The following has given part of the :cpp:`Set`'s implementation and the :cpp:`main()` function.
 
-.. admonition:: 翻译
-  :class: dropdown, translation
-
-  请保持接口与实现相分离地完成程序.
-
-  该程序实现了一个类 :cpp:`Set`, 它可以存储任意数量的 :cpp:`std::string` 对象, 且满足以下不变式,
-
-  - :cpp:`std::string* data_`
-
-    - 保存存储的 :cpp:`std::string` 对象.
-
-  - :cpp:`int size_`
-
-    - 表示存储的 :cpp:`std::string` 数量; 当不存储有 :cpp:`std::string` 对象时, :cpp:`size_ == 0`.
-
-  - 元素唯一性
-
-    - 对于 :cpp:`data_` 中存储的 :cpp:`std::string` 对象, 不存在两个对象 :cpp:`string1` 和 :cpp:`string2`, 使得 :cpp:`string1 == string2` (称为相等) 成立.
-    - 同时, 当插入新对象时, 若 :cpp:`data_` 中已存在相等的对象时, 则不进行插入.
-
-  为其实现,
-
-  - 构造函数 :cpp:`Set(std::string* data, int size)`
-
-    - 将 :cpp:`[data, data + size)` 中的元素加入 :cpp:`data_` 中.
-
-  - 拷贝构造函数
-  - 拷贝赋值函数
-  - :cpp:`auto operator+=(Set const& other) -> Set&`
-
-    - 将 :cpp:`other` 中的元素加入 :cpp:`*this` 中.
-
-  - :cpp:`friend auto operator+(Set const& lhs, Set const& rhs) -> Set`
-
-    - 合并两个 :cpp:`Set` 为一个新的 :cpp:`Set`.
-
-  - :cpp:`friend auto operator<<(std::ostream& ostream, Set const& set) -> std::ostream&`
-
-    - 按 :cpp:`[元素1, 元素2, ..., 元素n]` 的格式输出存储的 :cpp:`std::string` 对象.
-
-  以下已给出 :cpp:`List` 的部分实现以及 :cpp:`main()` 函数.
-
 .. literalinclude:: set.hpp
   :language: cpp
   :linenos:

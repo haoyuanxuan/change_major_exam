@@ -5,16 +5,3 @@
 .. literalinclude:: 1.cpp
   :language: cpp
   :linenos:
-
-.. admonition:: 点击查看答案
-  :class: dropdown, solution
-
-  :godbolt:`7v8Mc5z4r`
-
-  .. code-block:: text
-    :linenos:
-
-    A
-    B
-    5
-    65

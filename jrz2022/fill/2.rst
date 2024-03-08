@@ -4,11 +4,6 @@
 
 According to the following output results, fill in the blanks in the following programs.
 
-.. admonition:: 翻译
-  :class: dropdown, translation
-
-  根据以下输出结果, 填写下面程序中的空白.
-
 .. code-block:: text
   :linenos:
 
@@ -26,18 +21,3 @@ According to the following output results, fill in the blanks in the following p
 .. literalinclude:: 2.cpp
   :language: cpp
   :linenos:
-
-.. admonition:: 点击查看解答参考
-  :class: dropdown, solution
-
-  :godbolt:`nbah511bP`
-
-  1. :cpp:`char const* src`, 传递字符串.
-
-  2. :cpp:`{}`, 将数组全部初始化为 :cpp:`0`.
-
-  3. :cpp:`'\\0'`, C风格字符串的终止条件是达到了终止字符 :cpp:`'\\0'`.
-
-  4. :cpp:`*src++`, 两个功能: 返回当前指针指向的字符, 让对应的计数加一; :cpp:`++` 从而向后继续遍历.
-
-  5. :cpp:`static_cast<char>(i) << ' ' << hist[i]`, 首先要输出对应的字符，因而要类型转换，然后输出字符的计数，中间有空格.

@@ -5,16 +5,3 @@
 .. literalinclude:: 2.cpp
   :language: cpp
   :linenos:
-
-.. admonition:: 点击查看答案
-  :class: dropdown, solution
-
-  :godbolt:`MdKE4Tnjv`
-
-  .. code-block:: bash
-    :linenos:
-
-    3
-    9
-    4
-    2

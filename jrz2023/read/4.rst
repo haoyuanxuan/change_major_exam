@@ -5,17 +5,3 @@
 .. literalinclude:: 4.cpp
   :language: cpp
   :linenos:
-
-.. admonition:: 点击查看答案
-  :class: dropdown, solution
-
-  :godbolt:`bf6j9nYf5`
-
-  .. code-block:: text
-    :linenos:
-
-    {0, 1, 2, 3, 4}
-    {0, 1.1, 2.2, 3.3, 4.4}
-    {A, B, C, D, E}
-    int  2..... is: 2
-    char  3..... is: D

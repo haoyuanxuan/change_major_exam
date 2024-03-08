@@ -5,17 +5,3 @@
 .. literalinclude:: 3.cpp
   :language: cpp
   :linenos:
-
-.. admonition:: 点击查看答案
-  :class: dropdown, solution
-
-  :godbolt:`c383KGTq5`
-
-  .. code-block:: text
-    :linenos:
-
-    10
-    26
-    42
-    58
-    136
