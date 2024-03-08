@@ -6,6 +6,6 @@
   :maxdepth: 1
   :caption: 目录
 
-  ../lifetime/preface.rst
+  preface.rst
   normal.rst
   hardcore.rst
