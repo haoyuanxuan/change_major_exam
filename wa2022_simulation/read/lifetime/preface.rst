@@ -61,7 +61,7 @@
     Printer c1{Info{.ctor = "0", .copy_ctor = "1", .copy_assign = "2", .dtor = "3"}};
 
     // 构造时输出 "4", 被用于拷贝构造时输出 "5", 被用于拷贝赋值时输出 "6", 析构时输出 "7", 其余情况不输出
-    Printer c1{Info{.ctor = "4", .copy_ctor = "5", .copy_assign = "6", .dtor = "7"}};
+    Printer c2{Info{.ctor = "4", .copy_ctor = "5", .copy_assign = "6", .dtor = "7"}};
 
     // 输出 "2", 并且之后 c2.info == c1.info
     // 即此后构造时输出 "0", 被用于拷贝构造时输出 "1", 被用于拷贝赋值时输出 "2", 析构时输出 "3", 其余情况不输出
