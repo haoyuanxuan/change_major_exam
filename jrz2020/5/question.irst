@@ -3,3 +3,17 @@ Complete the following tasks using the :cpp:`ForwardList` provided below,
 1. Implement :cpp:`Queue1<T>` using :cpp:`ForwardList<T>` by privately inheritance.
 2. Implement :cpp:`Queue2<T>` using :cpp:`ForwardList<T>` by composition.
 3. Define a function template that consumes (get and pop element) all elements of the queue and print them out. After that, explicitly instantiate it with :cpp:`Queue1<char>` and specialize it with :cpp:`Queue2<int>`.
+
+.. admonition:: 翻译
+  :class: dropdown, translation
+
+   用下面提供的 :cpp:`ForwardList<T>` 完成以下任务,
+
+   1. 私用继承 :cpp:`ForwardList<T>` 从而实现 :cpp:`Queue1<T>`.
+   2. 组合 :cpp:`ForwardList<T>` 从而实现 :cpp:`Queue2<T>`.
+   3. 定义一个函数模板, 消耗 (即) 队列中的所有元素并打印. 然后, 用 :cpp:`Queue1<char>` 显式实例化它, 用 :cpp:`Queue2<int>` 特例化它.
+
+.. literalinclude:: forward_list.hpp
+  :language: cpp
+  :linenos:
+  :caption: forward_list.hpp

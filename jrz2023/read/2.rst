@@ -5,3 +5,14 @@
 .. literalinclude:: 2.cpp
   :language: cpp
   :linenos:
+
+.. admonition:: 点击查看答案
+  :class: dropdown, solution
+
+  :godbolt:`hazo3oKej`
+
+  .. code-block:: text
+    :linenos:
+
+    tpgtahc
+    7

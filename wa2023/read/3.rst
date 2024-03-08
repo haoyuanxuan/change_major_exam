@@ -5,3 +5,17 @@
 .. literalinclude:: 3.cpp
   :language: cpp
   :linenos:
+
+.. admonition:: 点击查看答案
+  :class: dropdown, solution
+
+  :godbolt:`7ev7fahbh`
+
+  .. code-block:: bash
+    :linenos:
+
+    1 2
+    3 4
+    6
+    7 8
+    91112

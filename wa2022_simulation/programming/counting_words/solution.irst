@@ -1,0 +1,41 @@
+- 读取行: 利用 :cpp:`auto getline(std::istream&, std::string&) -> std::istream&` 读取一整行.
+- 分离单词: 利用 :cpp:`auto operator>>(std::istream&, std::string&) -> std::istream&` 每次读取时都会跳过前面的空白符且读取到空白符结束.
+- 计数: 使用 :cpp:`std::map<std::string, int>` 进行.
+
+参考方法使用了 **部分** C++11 和 STL, 即我个人分享幻灯片中推荐的学习范围, 可能有点超纲, 我个人实在找不到其他更简便的方法了.
+
+:godbolt:`sKev54Gae`
+
+.. code-block:: cpp
+  :linenos:
+
+  #include <cctype>
+  #include <iostream>
+  #include <map>
+  #include <sstream>
+  #include <string>
+
+  auto to_lower(std::string string) -> std::string {
+    for (auto& ch : string) {
+      ch = static_cast<char>(std::tolower(static_cast<unsigned char>(ch)));
+    }
+    return string;
+  }
+
+  auto main() -> int {
+    std::string string;
+    std::getline(std::cin, string);
+
+    std::istringstream oss(string);
+
+    std::map<std::string, int> counter;
+    while (oss) {
+      oss >> string;
+      ++counter[to_lower(string)];
+    }
+
+    for (auto const& word_and_count : counter) {
+      std::cout << word_and_count.first << ": ";
+      std::cout << word_and_count.second << '\n';
+    }
+  }

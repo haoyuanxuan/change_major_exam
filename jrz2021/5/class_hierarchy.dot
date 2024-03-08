@@ -1,0 +1,49 @@
+digraph UML_Class_diagram {
+  node [fontname = "Helvetica,Arial,sans-serif"; shape = record; style = filled; fillcolor = gray95;];
+  edge [fontname = "Helvetica,Arial,sans-serif";];
+  
+  Shape [shape = plain;label = <<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+    <tr> <td> <b>Shape</b> </td> </tr>
+    <tr> <td></td> </tr>
+    <tr> <td></td> </tr>
+    </table>>;];
+  
+  TwoDiagramShape [shape = plain;label = <<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+    <tr> <td> <b>TwoDiagramShape</b> </td> </tr>
+    <tr> <td></td> </tr>
+    <tr> <td>
+    <table border="0" cellborder="0" cellspacing="0" >
+    <tr> <td align="left" >+ get_area() const: double</td> </tr>
+    </table>
+    </td> </tr>
+    </table>>;];
+  Circle;
+  Square;
+  Triangle;
+  
+  ThreeDiagramShape [shape = plain;label = <<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+    <tr> <td> <b>ThreeDiagramShape</b> </td> </tr>
+    <tr> <td></td> </tr>
+    <tr> <td>
+    <table border="0" cellborder="0" cellspacing="0" >
+    <tr> <td align="left" >+ get_area() const: double</td> </tr>
+    <tr> <td align="left" >+ get_volume() const: double</td> </tr>
+    </table>
+    </td> </tr>
+    </table>>;];
+  Sphere;
+  Cube;
+  Tetrahedron;
+  
+  edge [dir = back; arrowtail = empty; style = "";];
+  Shape -> TwoDiagramShape;
+  Shape -> ThreeDiagramShape;
+  
+  TwoDiagramShape -> Circle;
+  TwoDiagramShape -> Square;
+  TwoDiagramShape -> Triangle;
+  
+  ThreeDiagramShape -> Sphere;
+  ThreeDiagramShape -> Cube;
+  ThreeDiagramShape -> Tetrahedron;
+}

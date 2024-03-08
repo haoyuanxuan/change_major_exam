@@ -4,6 +4,11 @@
 
 The following program implements finding the smallest number, the output is as following, please complement it.
 
+.. admonition:: 翻译
+  :class: dropdown, translation
+
+  以下程序实现了查找最小值, 输出如下所示, 请补全它.
+
 .. code-block:: text
   :linenos:
 
@@ -13,3 +18,18 @@ The following program implements finding the smallest number, the output is as f
 .. literalinclude:: 1.cpp
   :language: cpp
   :linenos:
+
+.. admonition:: 点击查看解答参考
+  :class: dropdown, solution
+
+  :godbolt:`vdqPE4We1`
+
+  1. :cpp:`n`, 判断索引是否已经超出数组长度.
+
+  2. :cpp:`a[pk]`, 比较当前索引的值与当前最小值之间的大小.
+
+  3. :cpp:`i + 1`, 向右继续查找.
+
+  4. :cpp:`6`, 传递数组的长度.
+
+  5. :cpp:`a[n]`, 输出最小值.

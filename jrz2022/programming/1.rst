@@ -5,3 +5,17 @@
 Write function template, respectively to achieve sorting and binary search for the ascending array.
 
 In the :cpp:`main` function, define a 10-element integer and string array, randomly generate 10 integer number (in the range of :math:`[0, 100]`) and read in 10 strings, call function :cpp:`sort`, and then arbitrarily read in a number and a string, call function template search, output search results.
+
+.. admonition:: 翻译
+  :class: dropdown, translation
+
+  编写函数模板, 分别做到按升序排序数组和在升序数组里进行二分查找.
+
+  在 :cpp:`main` 函数中, 定义一个长度为 10 的整数数组和字符串数组, 随机地生成 10 个整数 (:math:`[0, 100]`) 和读入 10 个字符串, 调用 :cpp:`sort` 函数, 然后任意读入一个整数和一个字符串, 调用 :cpp:`search` 函数, 输出查找结果.
+
+.. admonition:: 点击查看解答参考
+  :class: dropdown, solution
+
+  :godbolt:`ozeaxf3jz`
+
+  跟 21 年第 1 题有些类似的地方.

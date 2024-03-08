@@ -41,3 +41,17 @@ Complete the following classes called :cpp:`Student`, :cpp:`UStudent`, :cpp:`GSt
   1001 Donald 156 1
   2003 Chris 36 1 1 1
   2004 Cindy 38 1 1 1
+
+.. admonition:: 翻译
+  :class: dropdown, translation
+
+  .. include:: 4_translation.irst
+
+.. admonition:: 点击查看解答参考
+  :class: dropdown, solution
+
+  :godbolt:`x58TxMz53`
+
+  这道题注意一下, 21 年最后一道题也考了类似的题。
+
+  此题中确切给出了输出文件的输出内容, 故虽然输出文件以看似很二进制的 ``.data`` 为后缀, 但不是二进制输出.

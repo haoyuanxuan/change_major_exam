@@ -5,3 +5,17 @@
 .. literalinclude:: 5.cpp
   :language: cpp
   :linenos:
+
+.. admonition:: 点击查看答案
+  :class: dropdown, solution
+
+  :godbolt:`Mav3YPss6`
+
+  .. code-block:: bash
+    :linenos:
+
+    Count is: 3
+    Count is: 2
+    Count is: 1
+    95
+    92
