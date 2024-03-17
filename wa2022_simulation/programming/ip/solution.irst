@@ -73,17 +73,14 @@
       int second = 0;
       int third = 0;
       int fourth = 0;
-      if (istream >> first && istream.peek() == '.') {
-        istream.get();
-        if (istream >> second && istream.peek() == '.') {
-          istream.get();
-          if (istream >> third && istream.peek() == '.') {
-            istream.get();
-            if (istream >> fourth) {
-              is_good = true;  // 格式正确
-            }
-          }
-        }
+      if（istream >> first
+          && istream.get() == '.'
+          && istream >> second
+          && istream.get() == '.'
+          && istream >> third
+          && istream.get() == '.'
+          && istream >> fourth) {
+        is_good = true;  // 格式正确
       }
 
       if (is_good) {
