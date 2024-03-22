@@ -29,7 +29,7 @@
 1. 相比于虚函数, 纯虚函数对类有什么影响? 列举至少 3 点.
 2. 派生类继承基类的方式有哪些?
 3. 继承按继承逻辑可以分为 is-a 和 has-a, 各种继承方式分别对应于这两个逻辑的哪一种?
-5. 重载 (overloading) , 重写 (override) 和覆盖 (shadow) 的区别? 可参考 `虚函数调用的感性理解 <question_board:virtual_function_invocation_explain>`_.
+4. 重载 (overloading) , 重写 (override) 和覆盖 (shadow) 的区别? 可参考 `虚函数调用的感性理解 <question_board:virtual_function_invocation_explain>`_.
 
 ========================================================================================================================
 杂七杂八 (miscellaneous)
