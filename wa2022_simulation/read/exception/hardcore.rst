@@ -20,9 +20,10 @@
 
   void function() {
     try {
-      Printer printer{Info{.ctor = "N", .copy_ctor = "U", .dtor = "L"}};
+      Printer printer{Info{.ctor = "i", .copy_ctor = "n", .dtor = "t"}};
       throw printer;
     } catch (Printer& printer) {
+      Printer another{Info{.ctor = "8", .dtor = "_"}};
     }
   }
 
@@ -33,12 +34,12 @@
 .. admonition:: 点击查看提示
   :class: dropdown
 
-  4 个字符, C++98 用来表示空指针的值.
+  6 个字符, 大小固定为 8 位的有符号整数类型.
 
 .. admonition:: 点击查看答案
   :class: dropdown, solution
 
-  :godbolt:`ccW7Pj35f`, 答案: :code:`NULL`.
+  :godbolt:`E1dezb8eP`, 答案: :code:`int8_t`.
 
 ========================================================================================================================
 异常捕获时
@@ -49,18 +50,28 @@
 - 如果 :cpp:`catch` 中写的是 :cpp:`catch (Printer printer)`, 则还需要发生拷贝.
 - 如果 :cpp:`catch` 中写的是 :cpp:`catch (Printer& printer)`, 则直接引用异常抛出的对象.
 
-
 .. code-block:: cpp
   :linenos:
 
   void function() {
     try {
-      Printer printer{Info{.ctor = "N", .copy_ctor = "U", .dtor = "L"}};
+      Printer printer{Info{.ctor = "i", .copy_ctor = "n", .dtor = "t"}};
       throw printer;
-    } catch (Printer printer) {  // 传值
+    } catch (Printer& printer) {
+      Printer another{Info{.ctor = "8", .dtor = "_"}};
     }
   }
 
   auto main() -> int {
-    function();  // 输出 "NULULL" 而非 "NULL"
+    function();
   }
+
+.. admonition:: 点击查看提示
+  :class: dropdown
+
+  8 个字符, 没能编出什么有意义的词了😭.
+
+.. admonition:: 点击查看答案
+  :class: dropdown, solution
+
+  :godbolt:`E1dezb8eP`, 答案: :code:`intn8_tt`.
