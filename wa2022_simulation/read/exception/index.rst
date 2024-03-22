@@ -2,10 +2,4 @@
 2. 异常的抛出与捕获
 ########################################################################################################################
 
-.. toctree::
-  :maxdepth: 1
-  :caption: 目录
-
-  preface.rst
-  normal.rst
-  hardcore.rst
+见于 :ref:`异常的抛出与捕获 <question_board:exception_throwing>`.
