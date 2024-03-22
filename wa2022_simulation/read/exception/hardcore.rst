@@ -74,4 +74,4 @@
 .. admonition:: 点击查看答案
   :class: dropdown, solution
 
-  :godbolt:`E1dezb8eP`, 答案: :code:`intn8_tt`.
+  :godbolt:`7Wz5f4jvY`, 答案: :code:`intn8_tt`.
