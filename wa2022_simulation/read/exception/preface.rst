@@ -82,7 +82,7 @@
 
 - 构造/赋值时先构造/赋值 :cpp:`Printer`, 再构造/赋值 :cpp:`DerivedPrinter`.
 - 析构时先析构 :cpp:`DerivedPrinter`, 再析构 :cpp:`Printer`.
-- 拷贝时发生切片, 只拷贝静态类型部分, 这部分内容可参考 :ref:`虚函数调用的感性理解 <question-board:virtual_function_invocation_explain>`, 但注意那是逻辑上的感性解释.
+- 拷贝时发生切片, 只拷贝静态类型部分, 这部分内容可参考 :ref:`虚函数调用的感性理解 <question_board:virtual_function_invocation_explain>`, 但注意那是逻辑上的感性解释.
 
 .. code-block:: cpp
   :linenos:
