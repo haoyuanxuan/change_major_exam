@@ -72,7 +72,7 @@ html_theme_options = {
     ],
     'repository_url': 'https://github.com/FeignClaims/change_major_exam',
     'show_nav_level': 0,
-    'show_prev_next': False,
+    'show_prev_next': True,
     'show_toc_level': 2,
     'use_edit_page_button': True,
     'use_issues_button': True,
