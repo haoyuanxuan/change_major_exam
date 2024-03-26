@@ -11,7 +11,7 @@
 .. admonition:: 点击查看解答参考
   :class: dropdown, solution
 
-  :godbolt:`9dEh75sGY`
+  :godbolt:`3xj94rMYK`
 
   "难点" 在于拆分数字和拼接数字, 利用字符串 :cpp:`std::string` 相关功能 (含 C++11 才提供的 :cpp:`std::to_string` 和 :cpp:`std::stoi`) 可简单完成.
 
