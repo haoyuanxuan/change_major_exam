@@ -17,7 +17,7 @@ class ForwardList {
   bool empty() const;
   T const& front() const;
   T const& back() const;
-  void remove(T const& value);
+  void remove(Node<T> const* value);
   void push_front(T const& value);
   void push_back(T const& value);
 
