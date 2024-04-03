@@ -22,6 +22,8 @@ In the :cpp:`main` function, define a 10-element integer and string array, rando
 .. admonition:: 点击查看解答参考
   :class: dropdown, solution
 
-  :godbolt:`ozeaxf3jz`
+  :godbolt:`ozeaxf3jz`.
 
   跟 21 年第 1 题有些类似的地方.
+
+  此外, 虽然不能直接用对应的 STL 算法, 但二分查找本身可以用寻找划分点这个 STL 算法实现, 因为所谓二分查找即找到有序数组中的一个元素, 之前的元素都小于它, 之后的元素都不小于它. 即 :godbolt:`7MaTzMocn`.
