@@ -13,15 +13,15 @@ void fill_impl(T (*array)[5], int size, T initial_value) {
       ++initial_value;
     }
 
-    // 如果这一圈只有一行内容, 则不用继续
+    // 该圈右边部分 {top + 1, right} -> {bottom, right}
+    for (int row = top + 1; row <= bottom; ++row) {
+      array[row][right] = initial_value;
+      ++initial_value;
+    }
+
+    // 如果这一圈只有一行/一列内容, 则不用继续
     if (left < right && top < bottom) {
       // 否则继续
-
-      // 该圈右边部分 {top + 1, right} -> {bottom, right}
-      for (int row = top + 1; row <= bottom; ++row) {
-        array[row][right] = initial_value;
-        ++initial_value;
-      }
 
       // 该圈下边部分 {bottom, right - 1} -> {bottom, left}
       for (int column = right - 1; column >= left; --column) {
