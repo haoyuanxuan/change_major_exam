@@ -1,60 +1,46 @@
-#include <cstring>
 #include <iostream>
-#include <string>
 
 using namespace std;
 
 template <typename T>
-void fill_impl(T (*array)[5], int order, int offset) {
-  int i     = 0;
-  int j     = 0;
-  int count = 0;
-  while (true) {
-    for (; j < order && array[i][j] == 0; ++j) {
-      array[i][j] = offset + count;
-      ++count;
+void fill_impl(T (*array)[5], int size, T initial_value) {
+  for (int left = 0, right = size - 1, top = 0, bottom = size - 1;
+       left <= right && top <= bottom;
+       ++left, --right, ++top, --bottom) {
+    // 该圈上面部分 {top, left} -> {top, right}
+    for (int column = left; column <= right; ++column) {
+      array[top][column] = initial_value;
+      ++initial_value;
     }
-    if (count == order * order) {
-      break;
-    }
-    ++i;
-    --j;
 
-    for (; i < order && array[i][j] == 0; ++i) {
-      array[i][j] = offset + count;
-      ++count;
-    }
-    if (count == order * order) {
-      break;
-    }
-    --i;
-    --j;
+    // 如果这一圈只有一行内容, 则不用继续
+    if (left < right && top < bottom) {
+      // 否则继续
 
-    for (; j > -1 && array[i][j] == 0; --j) {
-      array[i][j] = offset + count;
-      ++count;
-    }
-    if (count == order * order) {
-      break;
-    }
-    --i;
-    ++j;
+      // 该圈右边部分 {top + 1, right} -> {bottom, right}
+      for (int row = top + 1; row <= bottom; ++row) {
+        array[row][right] = initial_value;
+        ++initial_value;
+      }
 
-    for (; i > -1 && array[i][j] == 0; --i) {
-      array[i][j] = offset + count;
-      ++count;
+      // 该圈下边部分 {bottom, right - 1} -> {bottom, left}
+      for (int column = right - 1; column >= left; --column) {
+        array[bottom][column] = initial_value;
+        ++initial_value;
+      }
+
+      // 该圈左边部分 {bottom - 1, left} -> {top - 1, left}
+      for (int row = bottom - 1; row > top; --row) {
+        array[row][left] = initial_value;
+        ++initial_value;
+      }
     }
-    if (count == order * order) {
-      break;
-    }
-    ++i;
-    ++j;
   }
 }
 
-void fill(int (*num)[5], char (*ch)[5], int m) {
-  fill_impl(num, m, 1);
-  fill_impl(ch, m, 'a');
+void fill(int (*num)[5], char (*ch)[5], int size) {
+  fill_impl(num, size, 1);
+  fill_impl(ch, size, 'a');
 }
 
 template <typename T>
@@ -67,9 +53,9 @@ void print_impl(T (*array)[5], int order) {
   }
 }
 
-void print(int (*num)[5], char (*ch)[5], int m) {
-  print_impl(num, m);
-  print_impl(ch, m);
+void print(int (*num)[5], char (*ch)[5], int size) {
+  print_impl(num, size);
+  print_impl(ch, size);
 }
 
 int main() {

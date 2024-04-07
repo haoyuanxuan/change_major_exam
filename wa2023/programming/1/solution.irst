@@ -1,5 +1,9 @@
-:godbolt:`srE68Yx88`
+:godbolt:`zesP3W8hG`
 
-.. literalinclude:: solution.cpp
-  :language: cpp
-  :linenos:
+我们将螺旋分为各层, 用 :cpp:`left`、:cpp:`right`、:cpp:`top` 和 :cpp:`bottom` 表示该层的边界, 则下一层为 :cpp:`++left`、:cpp:`--right`、:cpp:`++top` 和 :cpp:`--bottom`.
+
+.. code-block:: txt
+
+  1 1 1 1
+  1 2 2 1
+  1 1 1 1
