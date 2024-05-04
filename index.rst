@@ -4,7 +4,8 @@
 计软智网转专业试题回忆版、模拟题及参考解答
 ########################################################################################################################
 
-`本网站的国内网址 (不支持搜索) <https://cpp_tutorial.gitee.io/change_major_exam/>`_
+- `本网站的国内网址 (不支持搜索) <https://cpp_tutorial.gitee.io/change_major_exam/>`_
+- `本网站的国外备用网址 (不支持搜索) <https://feignclaims.github.io/change_major_exam/>`_
 
 如果有 C++ 相关问题, 可以前往 :ref:`我的 C++ 答疑室 <question_board:main>` 进行提问.
 
