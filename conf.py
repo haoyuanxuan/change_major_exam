@@ -92,6 +92,7 @@ html_extra_path = [
     '_static/robots.txt',
     '_verification/5e34747cf23e02efb98960efb9a89f27.txt',
     '_verification/baidu_verify_codeva-dckf2PIPnk.html',
+    '_verification/c161d633fe0148f6a08c5afb5e230d50.txt',
     '_verification/google13ac7719c05e0aea.html',
     '_verification/sogousiteverification.txt',
 ]
