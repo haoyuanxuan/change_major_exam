@@ -1,0 +1,24 @@
+:godbolt:`nK6d6rczT`
+
+与 :doc:`/jrz2020/index` 第 4 题和 :doc:`/jrz2023/index` 上机第 2 题均考察了 :cpp:`set` 概念.
+
+此外, 我们需要对语句中的单词进行拆分, 这可以利用 :cpp:`cin >> string` 的默认行为: :ref:`读过前面所有空白符, 然后读入字符直到查看到空白符 <question_board:input_methods>`. 由此, 使用 :cpp:`#include <sstream>` 中的 :cpp:`stringstream` 即可实现单词拆分:
+
+.. code-block:: cpp
+  :linenos:
+
+  #include <iostream>
+  #include <sstream>
+  #include <string>
+
+  int main() {
+    std::string line;
+    std::getline(std::cin, line);  // 读取一整行
+
+    {
+      std::stringstream oss(line);
+      for (std::string word; oss >> word;) {
+        /* 使用拆分出的单词 */
+      }
+    }
+  }

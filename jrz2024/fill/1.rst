@@ -1,0 +1,50 @@
+************************************************************************************************************************
+1.
+************************************************************************************************************************
+
+请补全以下程序, 使其能统计一个语句中各字母出现的次数.
+
+例如, 对于输入:
+
+.. code-block:: text
+  :linenos:
+
+  C++ is not C with classes
+
+应该输出以下内容:
+
+.. code-block:: text
+  :linenos:
+
+  a	1
+  c	3
+  e	1
+  h	1
+  i	2
+  l	1
+  n	1
+  o	1
+  s	4
+  t	2
+  w	1
+
+.. literalinclude:: 1.cpp
+  :language: cpp
+  :linenos:
+
+.. admonition:: 点击查看解答参考
+  :class: dropdown, solution
+
+  :godbolt:`n89sc6zse`
+
+  由示例知, 对字母的统计不区分大小写.
+
+  1. :cpp:`text, text_size`
+
+  2. :cpp:`text[i] - 'a' + 1`. 由参考代码中的 :cpp:`text[i] - 'A' + 1` 知, 存在 :cpp:`1` 偏移.
+
+  3. :cpp:`text[i] >= 'A' && text[i] <= 'Z'`
+
+  4. :cpp:`i + 'a' - 1`. 由参考代码中的 :cpp:`text[i] - 'A' + 1` 知, 存在 :cpp:`1` 偏移.
+
+  5. :cpp:`static_cast<int>(letters[i])`. 由于数组元素是 :cpp:`char`, 需要转换为 :cpp:`int` 再输出.

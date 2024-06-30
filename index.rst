@@ -34,6 +34,7 @@
   jrz2021/index.rst
   jrz2022/index.rst
   jrz2023/index.rst
+  jrz2024/index.rst
   wa2022.rst
   wa2022_simulation/index.rst
   wa2023/index.rst
