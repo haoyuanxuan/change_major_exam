@@ -2,7 +2,7 @@
 
 我们将螺旋分为各层, 用 :cpp:`left`、:cpp:`right`、:cpp:`top` 和 :cpp:`bottom` 表示该层的边界, 则下一层为 :cpp:`++left`、:cpp:`--right`、:cpp:`++top` 和 :cpp:`--bottom`.
 
-.. code-block:: txt
+.. code-block:: text
 
   1 1 1 1
   1 2 2 1

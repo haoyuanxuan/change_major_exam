@@ -23,7 +23,7 @@ auto split_case_insensitive_words(std::string const& line)
   return words;
 }
 
-int main() {
+auto main() -> int {
   std::string line;
   std::getline(std::cin, line);
 

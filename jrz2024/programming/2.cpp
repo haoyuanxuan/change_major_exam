@@ -29,7 +29,7 @@ class Employer {
   double wage_;
 };
 
-int main() {
+auto main() -> int {
   Employer employers[3]
       = {Employer{"A", 1}, Employer{"B", 2}, Employer{"C", 3}};
   for (auto const& employer : employers) {
