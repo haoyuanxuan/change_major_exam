@@ -2,6 +2,11 @@
 3. (20 scores)
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  类的基础语法, C 风格字符串
+
 Complete 3 classes called :cpp:`Date`, :cpp:`Item` and :cpp:`Customer`. Make the following function named :cpp:`main` can output correctly.
 
 .. admonition:: 翻译

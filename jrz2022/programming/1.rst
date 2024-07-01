@@ -2,6 +2,11 @@
 1. (20 scores)
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  模板, 排序, 二分查找
+
 Write two function template:
 
 - A function template named :cpp:`sort` that sorts an array in non-descending order.

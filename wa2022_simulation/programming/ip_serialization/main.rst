@@ -2,6 +2,11 @@
 3. 二进制读写 IP 地址
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  二进制输入输出
+
 .. include:: question.irst
 .. admonition:: 点击查看解答参考
   :class: dropdown, solution

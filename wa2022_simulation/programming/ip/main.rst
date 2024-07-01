@@ -2,6 +2,11 @@
 2. 编写 IP 地址类
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  类的基础语法, 运算符重载
+
 .. include:: question.irst
 .. admonition:: 点击查看解答参考
   :class: dropdown, solution

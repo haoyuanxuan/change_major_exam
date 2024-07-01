@@ -2,6 +2,11 @@
 2. (20 scores)
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  类的基础语法
+
 A vector :math:`\overrightarrow{v}` on a two-dimensional plane can be expressed as :math:`(a, b)`. The basic operation of a vector is defined as follows:
 
 1. Vector modulus: :math:`||\overrightarrow{v}|| = \sqrt{a^2 + b^2}`.

@@ -2,6 +2,11 @@
 1. 统计单词数
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  几种 cin 输入方式
+
 .. include:: question.irst
 .. admonition:: 点击查看解答参考
   :class: dropdown, solution

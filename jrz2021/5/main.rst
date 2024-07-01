@@ -2,6 +2,11 @@
 5. Inheritance and class hierarchy
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  类的基础语法, 类层次, 虚函数调用, 资源
+
 .. include:: question.irst
 .. admonition:: 点击查看解答参考
   :class: dropdown, solution

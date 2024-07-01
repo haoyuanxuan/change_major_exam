@@ -2,6 +2,11 @@
 2. :cpp:`<cstring>`
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  C 风格字符串
+
 .. include:: question.irst
 .. admonition:: 点击查看解答参考
   :class: dropdown, solution

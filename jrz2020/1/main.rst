@@ -2,4 +2,9 @@
 1. Translate the input floating point to amount in words
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  综合考察
+
 .. include:: question.irst

@@ -2,6 +2,11 @@
 4. (20 scores)
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  类的基础语法, 类层次, 虚函数调用, 资源
+
 Programming for under graduate students graduation audits: read basic information, according to the requirements of graduation audit, output the information into ``studentGradutate.data`` file.
 
 Among them, under graduate students are required to complete at least 150 credits, and graduate students are required to complete at least 36 credits, and pass both teaching practice and scientific research assessement.

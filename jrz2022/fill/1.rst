@@ -2,6 +2,11 @@
 1. (10 scores)
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  C 风格数组, 递归函数
+
 The following program implements finding the smallest number, the output is as following, please complement it.
 
 .. admonition:: 翻译

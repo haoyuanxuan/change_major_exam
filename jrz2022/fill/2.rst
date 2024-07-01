@@ -2,6 +2,11 @@
 2. (10 scores)
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  类型转换
+
 According to the following output results, fill in the blanks in the following programs.
 
 .. admonition:: 翻译

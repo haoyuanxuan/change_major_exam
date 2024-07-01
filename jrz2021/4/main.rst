@@ -2,6 +2,11 @@
 4. Complete the program
 ************************************************************************************************************************
 
+.. admonition:: 点击查看考点
+  :class: dropdown, keyword
+
+  类的基础语法
+
 .. include:: question.irst
 .. admonition:: 点击查看解答参考
   :class: dropdown, solution
