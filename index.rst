@@ -38,3 +38,4 @@
   wa2022.rst
   wa2022_simulation/index.rst
   wa2023/index.rst
+  wa2024/index.rst

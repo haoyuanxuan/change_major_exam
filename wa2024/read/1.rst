@@ -1,0 +1,24 @@
+************************************************************************************************************************
+1. 生命周期
+************************************************************************************************************************
+
+.. literalinclude:: 1.cpp
+  :language: cpp
+  :linenos:
+
+.. admonition:: 点击查看答案
+  :class: dropdown, solution
+
+  :godbolt:`Eno4zYvvc`
+
+  .. code-block:: text
+    :linenos:
+
+    Construct Guest of g1
+    Construct...
+    in the main function
+    in the block
+    end the main function
+    Destruct Guest of g1
+    Destruct Guest of g1
+    Destruct Guest of g1
