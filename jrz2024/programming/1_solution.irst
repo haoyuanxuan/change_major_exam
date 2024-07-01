@@ -1,6 +1,6 @@
 :godbolt:`dfnEfEds3`
 
-此外, 我们需要对语句中的单词进行拆分, 这可以利用 :cpp:`cin >> string` 的默认行为: :ref:`读过前面所有空白符, 然后读入字符直到查看到空白符 <question_board:input_methods>`. 由此, 使用 :cpp:`#include <sstream>` 中的 :cpp:`stringstream` 即可实现单词拆分:
+我们需要对语句中的单词进行拆分, 这可以利用 :cpp:`cin >> string` 的默认行为: :ref:`读过前面所有空白符, 然后读入字符直到查看到空白符 <question_board:input_methods>`. 由此, 使用 :cpp:`#include <sstream>` 中的 :cpp:`stringstream` 即可实现单词拆分:
 
 .. code-block:: cpp
   :linenos:
@@ -19,4 +19,19 @@
         /* 使用拆分出的单词 */
       }
     }
+  }
+
+此外, 除了用 :cpp:`std::set` 进行去重, 你也可以用 :cpp:`std::sort` 和 :cpp:`std::unique` 进行去重操作: :godbolt:`EdKh8bPe5`
+
+.. code-block:: cpp
+  :linenos:
+
+  #include <algorithm>
+  #include <vector>
+
+  int main() {
+    std::vector<int> vector = {4, 3, 2, 3, 1};
+    std::sort(vector.begin(), vector.end());
+    vector.erase(std::unique(vector.begin(), vector.end()), vector.end());
+    // vector == {1, 2, 3, 4}
   }
