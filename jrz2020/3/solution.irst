@@ -9,7 +9,7 @@
     :godbolt:`6jrxvY353`
 
     - 首先从 :cpp:`str` 中查找 :cpp:`substr` 子字符串, 返回子字符串在主字符串中第一个字符的下标.
-    - 如果没找到, 那结束; 如果找到，继续以后步骤.
+    - 如果没找到, 那结束; 如果找到, 继续以后步骤.
     - 创建一个临时数组 :cpp:`buffer`, 用于暂存结果.
     - 拷贝":cpp:`str` 的 :cpp:`substr` 子字符串之前的部分"到 :cpp:`buffer` 中.
     - 拷贝":cpp:`replace` 字符串"到 :cpp:`buffer` 中.
