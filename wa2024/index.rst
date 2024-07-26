@@ -4,6 +4,10 @@
 
 回忆人: 23-转网安-黄海振.
 
+.. admonition:: 考试方法
+
+  中文试题, 笔试 2 小时.
+
 .. toctree::
   :maxdepth: 1
   :caption: 目录

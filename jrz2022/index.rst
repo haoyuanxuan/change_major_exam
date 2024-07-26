@@ -6,7 +6,7 @@
 
 .. admonition:: 考试方法
 
-  笔试 2 小时.
+  全英试题, 笔试 2 小时, 看不懂可以问监考老师.
 
 .. toctree::
   :maxdepth: 2

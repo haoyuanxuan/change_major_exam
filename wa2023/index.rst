@@ -4,6 +4,9 @@
 
 回忆人: 22-转密码-黄睿扬.
 
+.. admonition:: 考试方法
+
+  中文试题, 笔试 2 小时.
 
 .. toctree::
   :maxdepth: 1
